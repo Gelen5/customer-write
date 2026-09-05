@@ -1,6 +1,6 @@
 ---
 name: customer-write
-description: 微信公众号全链路内容Agent（融合版）——选题→框架→写作→反AI→配图→排版→发布 8步一键完成，内置完整主题排版引擎（4套可用主题+通用增量库+自定义主题生成+非Markdown归一化），零外部依赖。支持3层humanness反AI评分、7种人格×7种框架、范文SICO风格注入、双轨交付（零门槛复制+API入库）、小绿书/贴图号模式。当用户提到公众号/推文/微信排版/选题/热搜/草稿箱/反AI/humanness/小绿书/wechat/weixin/publish/article时触发。
+description: 微信公众号全链路内容Agent（融合版）——选题→框架→写作→反AI→配图→排版→发布 8步一键完成，内置完整主题排版引擎（7套可用主题+通用增量库+自定义主题生成+非Markdown归一化），零外部依赖。支持3层humanness反AI评分、7种人格×7种框架、范文SICO风格注入、双轨交付（零门槛复制+API入库）、小绿书/贴图号模式。当用户提到公众号/推文/微信排版/选题/热搜/草稿箱/反AI/humanness/小绿书/wechat/weixin/publish/article时触发。
 allowed-tools:
   - Bash
   - Read
@@ -26,7 +26,7 @@ allowed-tools:
 | **md2wechat** | 43个布局模块、:::module 结构化排版DSL、18+主题、Humanizer去AI痕迹、容器语法、Discovery-First协议、确认层与执行层分离 |
 | **wechat-publisher** | 12基础组件+风格预设、3种SVG信息图、新闻信号卡、AI现场手写排版、双轨交付(零门槛复制+API入库)、base64防裂图、article-template.html手机预览框 |
 | **kol-writer** | AI禁用词替换表（7词+替换建议）、句式结构检测（排比/绝对对比/过度并列）、平台写作规范（Hook公式+调性+避坑） |
-| **gzh-design（已内置）** | 主题组件库（4套可用主题+通用增量库）、`<span leaf>` 防裂包裹、validate_gzh_html.py 合规校验、wrap_preview.py 一键复制预览、自定义主题生成、非Markdown输入归一化 |
+| **gzh-design（已内置）** | 主题组件库（7套可用主题+通用增量库）、`<span leaf>` 防裂包裹、validate_gzh_html.py 合规校验、wrap_preview.py 一键复制预览、自定义主题生成、非Markdown输入归一化 |
 
 ---
 
@@ -41,7 +41,7 @@ allowed-tools:
 模式判定优先级：用户显式指定 > 上下文推断 > 默认交互模式。
 
 > ⚠️ **排版主题一律自动选择，不向用户提问。**
-> 候选主题为 gzh-design 的 4 套（摸鱼绿 `moyu-green`、留白禅意 `zen-whitespace` 已禁用，不列入）。
+> 候选主题为内置主题引擎的 7 套（摸鱼绿 `moyu-green`、留白禅意 `zen-whitespace` 已禁用，不列入）。
 > 选择逻辑：题材明显契合某套 → 用契合套；无明显契合 → 用默认兜底 **红白色系 `red-white`**。
 > 例外：用户在请求中已点名某套主题（如"用石墨极简风排"）→ 直接采用该主题。
 > 用户点名被禁用的主题（摸鱼绿 / 留白禅意）→ 提示已禁用，改用兜底并告知。
@@ -79,6 +79,7 @@ layout_mode: gzh        # gzh=走内置主题引擎 references/themes/（默认�
                         # A/B/C=仅当内置主题引擎文件缺失时的降级路径
 theme: red-white        # 内置主题可用英文标识（默认兜底=红白色系）：
                         #   red-white / graphite-minimal / moyu-ticket / olive-journal
+                        #   sky-xuetang / banner-coral / azure-kaowu
                         #   （moyu-green / zen-whitespace 已禁用，不得选用）
                         # 排版时自动按题材选主题，本字段仅作兜底/记忆用
 font_size: 15
@@ -377,7 +378,7 @@ avg_sentence_length: 22  # 目标平均句长
 5. 记录主题中文名 + 英文标识 → 进入 7.1
 ```
 
-**可用主题（4 套）**——已禁用 摸鱼绿 `moyu-green`、留白禅意 `zen-whitespace`，**不得选用、不向用户展示**：
+**可用主题（7 套）**——已禁用 摸鱼绿 `moyu-green`、留白禅意 `zen-whitespace`，**不得选用、不向用户展示**：
 
 | # | 主题 | 标识 | 主色 | 风格特点 | 适用场景 |
 |---|------|------|------|---------|---------|
@@ -385,6 +386,9 @@ avg_sentence_length: 22  # 目标平均句长
 | 2 | 石墨极简风 | `graphite-minimal` | `#52525B` | 极简克制、留白理性、全灰阶无彩色 | 设计、科技评论、专业观点、高端品牌 |
 | 3 | 摸鱼票据风 | `moyu-ticket` | `#059669` | 票据 / 门票视觉隐喻，星级评分 + 编号 + 硬阴影卡片 | 测评、工具对比、创意评测 |
 | 4 | 橄榄手记 | `olive-journal` | `#1e1f23`（配橙 `#ed7b2f`） | 编辑部内刊质感，分节形式多样，信息密度偏高 | 内刊手记、深度评测、案例复盘、系统性说明文档 |
+| 5 | 天蓝学堂·清新教招 | `sky-xuetang` | `#1E9EF0` 天蓝 | 招聘标头 + 岗位一览卡 + 报名分步 + 下载引导，现代亲和 | 教师/事业单位/医护编/人才引进公开招聘报名 |
+| 6 | 珊瑚招贴·火热招生 | `banner-coral` | `#E6392F`（配明黄 `#FFB300`） | 促销角标 + 班型卡 + 报名 CTA 大按钮，招贴感强 | 开班招生、报名启动、线下宣讲、名额热度 |
+| 7 | 考务蓝·严谨考务 | `azure-kaowu` | `#2456D8`（配天蓝 `#3E8EF7`） | 考务标头 + 日程时间轴 + 科目卡，正式清晰 | 笔试/面试通知、考试大纲、考务流程、分数线 |
 
 > 已禁用：~~摸鱼绿 `moyu-green`（卡片丰富、教程/清单向）~~、~~留白禅意 `zen-whitespace`（禅意/随笔向）~~。
 > 本表为缓存，主题可用性以 `references/themes/theme-index.md` 为准；若缓存表与 theme-index.md 不一致，以 theme-index.md 更新本表（若某套已被 theme-index.md 移除，视为不可用）。
