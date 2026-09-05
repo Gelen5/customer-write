@@ -1,0 +1,21 @@
+# 运行时数据与密钥，不入库
+.env
+.cache/
+history/published.json
+config/style.yaml
+config/persona.yaml
+.venv/
+
+# 依赖
+node_modules/
+
+# 系统文件
+Thumbs.db
+.DS_Store
+
+# 产物
+*.html
+!references/article-template.html
+!assets/**/*.html
+!docs/**/*.html
+output/
