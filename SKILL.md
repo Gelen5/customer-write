@@ -1,6 +1,6 @@
 ---
 name: customer-write
-description: 微信公众号全链路内容Agent（融合版）——选题→框架→写作→反AI→配图→排版→发布 8步一键完成，内置完整主题排版引擎（7套可用主题+通用增量库+自定义主题生成+非Markdown归一化），零外部依赖。支持3层humanness反AI评分、7种人格×7种框架、范文SICO风格注入、双轨交付（零门槛复制+API入库）、小绿书/贴图号模式。当用户提到公众号/推文/微信排版/选题/热搜/草稿箱/反AI/humanness/小绿书/wechat/weixin/publish/article时触发。
+description: 微信公众号全链路内容Agent（融合版）——选题→框架→写作→反AI→配图→排版→发布 8步一键完成，内置完整主题排版引擎（10套可用主题+通用增量库+自定义主题生成+非Markdown归一化），零外部依赖。支持3层humanness反AI评分、7种人格×7种框架、范文SICO风格注入、双轨交付（零门槛复制+API入库）、小绿书/贴图号模式。当用户提到公众号/推文/微信排版/选题/热搜/草稿箱/反AI/humanness/小绿书/wechat/weixin/publish/article时触发。
 allowed-tools:
   - Bash
   - Read
@@ -26,7 +26,7 @@ allowed-tools:
 | **md2wechat** | 43个布局模块、:::module 结构化排版DSL、18+主题、Humanizer去AI痕迹、容器语法、Discovery-First协议、确认层与执行层分离 |
 | **wechat-publisher** | 12基础组件+风格预设、3种SVG信息图、新闻信号卡、AI现场手写排版、双轨交付(零门槛复制+API入库)、base64防裂图、article-template.html手机预览框 |
 | **kol-writer** | AI禁用词替换表（7词+替换建议）、句式结构检测（排比/绝对对比/过度并列）、平台写作规范（Hook公式+调性+避坑） |
-| **gzh-design（已内置）** | 主题组件库（7套可用主题+通用增量库）、`<span leaf>` 防裂包裹、validate_gzh_html.py 合规校验、wrap_preview.py 一键复制预览、自定义主题生成、非Markdown输入归一化 |
+| **gzh-design（已内置）** | 主题组件库（10套可用主题+通用增量库）、`<span leaf>` 防裂包裹、validate_gzh_html.py 合规校验、wrap_preview.py 一键复制预览、自定义主题生成、非Markdown输入归一化 |
 
 ---
 
@@ -41,7 +41,7 @@ allowed-tools:
 模式判定优先级：用户显式指定 > 上下文推断 > 默认交互模式。
 
 > ⚠️ **排版主题一律自动选择，不向用户提问。**
-> 候选主题为内置主题引擎的 7 套（摸鱼绿 `moyu-green`、留白禅意 `zen-whitespace` 已禁用，不列入）。
+> 候选主题为内置主题引擎的 10 套（摸鱼绿 `moyu-green`、留白禅意 `zen-whitespace` 已禁用，不列入）。
 > 选择逻辑：题材明显契合某套 → 用契合套；无明显契合 → 用默认兜底 **红白色系 `red-white`**。
 > 例外：用户在请求中已点名某套主题（如"用石墨极简风排"）→ 直接采用该主题。
 > 用户点名被禁用的主题（摸鱼绿 / 留白禅意）→ 提示已禁用，改用兜底并告知。
@@ -80,6 +80,7 @@ layout_mode: gzh        # gzh=走内置主题引擎 references/themes/（默认�
 theme: red-white        # 内置主题可用英文标识（默认兜底=红白色系）：
                         #   red-white / graphite-minimal / moyu-ticket / olive-journal
                         #   sky-xuetang / banner-coral / azure-kaowu
+                        #   ink-note / amber-skim / timeline-review
                         #   （moyu-green / zen-whitespace 已禁用，不得选用）
                         # 排版时自动按题材选主题，本字段仅作兜底/记忆用
 font_size: 15
@@ -378,7 +379,7 @@ avg_sentence_length: 22  # 目标平均句长
 5. 记录主题中文名 + 英文标识 → 进入 7.1
 ```
 
-**可用主题（7 套）**——已禁用 摸鱼绿 `moyu-green`、留白禅意 `zen-whitespace`，**不得选用、不向用户展示**：
+**可用主题（10 套）**——已禁用 摸鱼绿 `moyu-green`、留白禅意 `zen-whitespace`，**不得选用、不向用户展示**：
 
 | # | 主题 | 标识 | 主色 | 风格特点 | 适用场景 |
 |---|------|------|------|---------|---------|
@@ -389,6 +390,9 @@ avg_sentence_length: 22  # 目标平均句长
 | 5 | 天蓝学堂·清新教招 | `sky-xuetang` | `#1E9EF0` 天蓝 | 招聘标头 + 岗位一览卡 + 报名分步 + 下载引导，现代亲和 | 教师/事业单位/医护编/人才引进公开招聘报名 |
 | 6 | 珊瑚招贴·火热招生 | `banner-coral` | `#E6392F`（配明黄 `#FFB300`） | 促销角标 + 班型卡 + 报名 CTA 大按钮，招贴感强 | 开班招生、报名启动、线下宣讲、名额热度 |
 | 7 | 考务蓝·严谨考务 | `azure-kaowu` | `#2456D8`（配天蓝 `#3E8EF7`） | 考务标头 + 日程时间轴 + 科目卡，正式清晰 | 笔试/面试通知、考试大纲、考务流程、分数线 |
+| 8 | 墨蓝批注·荧光笔记 | `ink-note` | `#2F5A8F`（配荧光黄 `#F5C518`） | 笔记批注感：荧光笔划重点 + 批注卡 + 坑点细左条，白底为主几乎无色块 | 备考经验帖、学习方法拆解、干货笔记 |
+| 9 | 琥珀速读·干货卡 | `amber-skim` | `#B45309`（暖米 `#FDF6EC` 衬） | 结论前置 + 要点拆条 + 速记卡，扫读吸收最快，色块极少 | 考试干货清单、避坑指南、方法速览 |
+| 10 | 黛青复盘·时间轴 | `timeline-review` | `#2E6E65`（青灰白 `#F1F6F4` 衬） | 阶段时间轴 + 成绩对比卡 + 复盘小结，叙事推进感强 | 备考全过程复盘、上岸经验叙事、阶段规划 |
 
 > 已禁用：~~摸鱼绿 `moyu-green`（卡片丰富、教程/清单向）~~、~~留白禅意 `zen-whitespace`（禅意/随笔向）~~。
 > 本表为缓存，主题可用性以 `references/themes/theme-index.md` 为准；若缓存表与 theme-index.md 不一致，以 theme-index.md 更新本表（若某套已被 theme-index.md 移除，视为不可用）。
@@ -421,6 +425,8 @@ avg_sentence_length: 22  # 目标平均句长
 - 一篇文章只用所选主题 + 通用库，**不跨主题借组件**
 - 所有文字节点必须 `<span leaf="">文字</span>` 包裹（漏包裹 = 粘贴后样式整片丢失）
 - 产物为**纯 `<section>…</section>` 片段**，不包 doctype / html / head / body
+- **⛔ 硬规则：外标题绝不写入正文 HTML**。文章外标题在交付时**单独输出给用户**（一条消息只给标题），不混进正文产物、不放在正文第一行；外标题按 14–22 字控制，≤28 字为上限
+- **⛔ 硬规则：单篇配色 ≤2 色**。正文黑 `#000000`，加粗强调只用红 `#C00000` **或** 橙 `#E67E17`（同篇二选一，红橙不得混用）；成品模板与配色规范见 `references/templates/README.md`
 
 #### 7.2 校验 + 交付（强制）
 
@@ -704,6 +710,7 @@ Humanness评分：综合 XX（L1=XX L2=XX L3=XX）
 | `{skill_dir}/scripts/` | 脚本目录（Node: publish.ts, render.ts, img2base64.ts, imagegen.ts, wechat.ts；Python: humanizer评分、validate_gzh_html.py, wrap_preview.py, layout_quality_check.py, component_lint.py, extract_docx.py） |
 | `{skill_dir}/references/` | 参考文件目录（components.md, article-template.html, wechat-html-spec.md, styles/） |
 | `{skill_dir}/references/themes/` | **内置主题引擎**（theme-index.md、theme-{标识}.md、common-components.md、theme-generator.md、format-normalize.md、README.md 契约） |
+| `{skill_dir}/references/templates/` | **成品模板库**（配色模板 + 样文正文，红黑/橙黑两套，README.md 为模板列表与硬规则） |
 | `{skill_dir}/prompts/` | 提示词模板目录（wechat-format-prompt.md） |
 | `{skill_dir}/history/` | 历史记录目录（published.json） |
 | `{skill_dir}/.cache/` | 缓存目录（token.json, last-article.json） |
@@ -711,6 +718,7 @@ Humanness评分：综合 XX（L1=XX L2=XX L3=XX）
 
 **读取即指令**：
 - `references/themes/README.md` — **内置主题引擎对接契约（[7/8] 排版节点必读，先于一切排版动作）**
+- `references/templates/README.md` — **成品模板列表**（红黑/橙黑配色模板与样文正文；含「标题单独交付、不写入正文」「单篇 ≤2 色、红橙不混」等硬规则，排版前必读）
 - `references/components.md` — 组件库+设计token+SVG模板（写HTML前必读）
 - `references/article-template.html` — 带手机预览框的文章骨架（仅降级路径使用）
 - `references/ai_artifacts_blacklist.md` — AI禁用词+替换建议表（[4/8]写作+[5/8]反AI必读）

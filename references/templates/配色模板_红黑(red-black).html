@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="BwkbqmFrJrDvpCtdAoUl3Y">
+<head data-page-node-id="Jkx718FYE38QTsF3G2JKfL">
+<meta charset="UTF-8" data-page-node-id="8HqC3EjFWciFCD5kQncf4d">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="AFT5F3GhjYqoGQlEw2tUfi">
+<title>红黑配色模板</title>
+<style>
+  :root {
+    --color-primary: #000000;
+    --color-accent: #C00000;
+    --color-accent-deep: #8F0000;
+    --color-accent-soft: #FDF2F2;
+    --color-bg: #FFFFFF;
+    --color-text: #1A1A1A;
+    --color-muted: #555555;
+    --color-border: #DDDDDD;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background-color: #F5F5F5;
+    color: var(--color-text);
+    line-height: 1.8;
+    font-size: 16px;
+    padding: 24px 12px;
+  }
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  /* ===== 顶部标题区 ===== */
+  .masthead {
+    background-color: var(--color-primary);
+    padding: 40px 36px 32px;
+  }
+  .masthead .site-name {
+    font-size: 26px;
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+  }
+  .masthead .site-name .dot { color: var(--color-accent); }
+  .masthead .tagline {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #BBBBBB;
+  }
+  .accent-bar {
+    height: 4px;
+    background-color: var(--color-accent);
+  }
+  /* ===== 内容区 ===== */
+  .content { padding: 36px; }
+  h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 6px;
+    line-height: 1.4;
+  }
+  .subtitle {
+    font-size: 14px;
+    color: var(--color-muted);
+    margin-bottom: 28px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-border);
+  }
+  h2 {
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 32px 0 12px;
+    padding-left: 12px;
+    border-left: 4px solid var(--color-accent);
+    line-height: 1.5;
+  }
+  p { margin-bottom: 16px; }
+  .lead {
+    font-size: 17px;
+    color: var(--color-text);
+  }
+  strong { color: var(--color-accent); font-weight: 700; }
+  .muted { color: var(--color-muted); font-size: 14px; }
+  /* ===== 强调卡 ===== */
+  .callout {
+    background-color: var(--color-accent-soft);
+    border-left: 4px solid var(--color-accent);
+    padding: 16px 20px;
+    margin: 20px 0;
+    border-radius: 0 6px 6px 0;
+  }
+  .callout p { margin: 0; color: var(--color-accent-deep); }
+  /* ===== 按钮 ===== */
+  .btn-row { margin: 28px 0 8px; display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 6px;
+    text-decoration: none;
+    line-height: 1.4;
+    cursor: pointer;
+    border: none;
+  }
+  .btn-primary {
+    background-color: var(--color-accent);
+    color: #FFFFFF;
+  }
+  .btn-primary:hover { background-color: var(--color-accent-deep); }
+  .btn-ghost {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    padding: 10px 28px;
+  }
+  .btn-ghost:hover {
+    background-color: var(--color-primary);
+    color: #FFFFFF;
+  }
+  .btn-text { color: var(--color-accent); font-weight: 700; text-decoration: none; padding: 12px 4px; }
+  .btn-text:hover { text-decoration: underline; }
+  /* ===== 链接样式 ===== */
+  a { color: var(--color-accent); text-decoration: none; }
+  a:hover { text-decoration: underline; color: var(--color-accent-deep); }
+  .link-list { list-style: none; margin: 12px 0 0; }
+  .link-list li { padding: 10px 0; border-bottom: 1px dashed var(--color-border); }
+  .link-list li a {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--color-text);
+  }
+  .link-list li a:hover { color: var(--color-accent); }
+  .link-list .meta { color: var(--color-muted); font-size: 13px; margin-left: 8px; font-weight: 400; }
+  /* ===== 页脚 ===== */
+  .footer {
+    background-color: var(--color-primary);
+    color: #999999;
+    text-align: center;
+    font-size: 13px;
+    padding: 20px;
+  }
+  .footer .accent { color: var(--color-accent); font-weight: 700; }
+</style>
+</head>
+<body data-page-node-id="51yFann3t9IwGAugazuqtj">
+<div class="page" data-page-node-id="c904TPTekmlc4eT1Zr7TLs">
+
+  <header class="masthead" data-page-node-id="ECRvPfW4LHZkOWxODX7oeW">
+    <div class="site-name" data-page-node-id="atZWKz5aP6ONIOpMDnSCQz">红黑配色模板<span class="dot" data-page-node-id="jxFwVMRwGJbCiJgfCPMJSf">.</span></div>
+    <div class="tagline" data-page-node-id="BRqPORZXCkfhl2T7ASHUao">黑色为主色调 · 红色作为强调色 · 整体效果演示</div>
+  </header>
+  <div class="accent-bar" data-page-node-id="fsMRid5XcDbszQUx1iJvRd"></div>
+
+  <main class="content" data-page-node-id="HNypFEb03f7A0mRc4BoLQ3">
+    <h1 data-page-node-id="vMLHrPegyRI8e4lxo2Qgak">这是文章主标题：黑色加粗，层级最高</h1>
+    <p class="subtitle" data-page-node-id="21UpIAvnGGOyDcCF2b0oku">副标题区域：使用灰色小字，与主标题形成字号与颜色对比</p>
+
+    <p class="lead" data-page-node-id="aJI46HlpUjcEfiajgBn9Uz">这是一段导语文字。<strong data-page-node-id="4FoSBADPsjxx4GAx2N8wsh">红色加粗用于全文最核心的信息</strong>，读者扫一眼即可抓住重点。导语通常一两句话说明整页内容的主旨。</p>
+
+    <h2 data-page-node-id="pgas1MmPRgxB463Qe4VFOB">一级小节标题（左侧红色竖条）</h2>
+    <p data-page-node-id="lTULYJVwvo9VYOtCFEMdk5">这里是正文段落。整体文字以黑色为主，保证长时间阅读的舒适度。只有当出现<strong data-page-node-id="FzaCpnrSgr89nGGVhiwFQx">关键结论、核心数据或重要方法</strong>时，才使用红色加粗进行强调，避免滥用导致重点稀释。</p>
+    <p data-page-node-id="YO6yr8lh5dg9Ondw6WmRFa">再一个普通段落，用于观察行距与字号的阅读节奏。黑色正文搭配白色背景，<strong data-page-node-id="IVS6dkF4MaNM9NGt3PSB2G">对比度达到 WCAG AAA 级标准</strong>，适合各类正式页面。</p>
+
+    <div class="callout" data-page-node-id="MS9Q2ge8leF10U9EMt86FJ">
+      <p data-page-node-id="XbyseFjLdkthzOy4r8xYUU">强调卡示例：浅红底色 + 红色左边条，用于放置最重要的提示或结论，全页最多出现一处。</p>
+    </div>
+
+    <h2 data-page-node-id="hIeLfTbpKTiqv3yLCtvSta">按钮元素展示</h2>
+    <p class="muted" data-page-node-id="EH6g3n1MN6kSWqzbwd6ALv">主按钮：红底白字；描边按钮：黑框黑字；文字按钮：红色加粗。</p>
+    <div class="btn-row" data-page-node-id="Sno6WDG6lYvVvJkcXQEBSP">
+      <a class="btn btn-primary" href="#" data-page-node-id="F5F8PfO4INQvrrttMOTh7h">立即开始</a>
+      <a class="btn btn-ghost" href="#" data-page-node-id="OpE4oxOnrNtE0ePamLzHHY">了解更多</a>
+      <a class="btn-text" href="#" data-page-node-id="0VWvorWL6v8XEwnI3K7sGC">查看详情 →</a>
+    </div>
+
+    <h2 data-page-node-id="dBWq9eMHbTyIs8XslCNHBm">链接与列表展示</h2>
+    <p data-page-node-id="K5LWPbT6EcsPExmlEp93FA">正文内的普通链接长这样：<a href="#" data-page-node-id="IFYb3lzao9eEyPS6Dxs8iA">这是一条行内链接，红色显示，悬停出现下划线</a>。</p>
+    <ul class="link-list" data-page-node-id="JZXCM9jQBF0reoVHrkr2o9">
+      <li data-page-node-id="o9J528HZdEi3E8Z7qHYKdR"><a href="#" data-page-node-id="EGwVWLOoEPjdCgHdE9JwBu">列表链接标题：文章条目一<span class="meta" data-page-node-id="fZmUYYkXwPOEz2pCiGXuZv">2026-09-01</span></a></li>
+      <li data-page-node-id="KqGXDLZGjzWVh6JjLoWVIs"><a href="#" data-page-node-id="e5W9ST87aQxhChmA53s66G">列表链接标题：文章条目二<span class="meta" data-page-node-id="OnHEzPkHMDuh7eicvZqcsf">2026-08-25</span></a></li>
+      <li data-page-node-id="zU0kaFvuA6hwgyfWs3tKHn"><a href="#" data-page-node-id="i5W6qJEFkimsLMBosluisQ">列表链接标题：文章条目三<span class="meta" data-page-node-id="nzsERFZOl2t0Gd19udiyJ8">2026-08-18</span></a></li>
+    </ul>
+  </main>
+
+  <footer class="footer" data-page-node-id="5aYyhkFb0ASko0cINCJ06n">
+    页脚区域 · 黑底展示整体收束效果 · <span class="accent" data-page-node-id="FJqHZdgVJzad93GAGAXhBY">红色点睛</span>
+  </footer>
+
+</div>
+</body>
+</html>

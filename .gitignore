@@ -16,6 +16,7 @@ Thumbs.db
 # 产物
 *.html
 !references/article-template.html
+!references/templates/*.html
 !assets/**/*.html
 !docs/**/*.html
 output/

@@ -42,7 +42,7 @@
 ## 组件 1 全局容器
 
 ```html
-<section style="max-width:677px;margin:0 auto;background:#FFFFFF;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#453B3A;line-height:1.85;letter-spacing:0.2px;overflow-x:hidden;">
+<section style="max-width:677px;margin:0 auto;background-color:#FFFFFF;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#453B3A;line-height:1.85;letter-spacing:0.2px;overflow-x:hidden;">
 
   <!-- 所有组件放在这里 -->
 
@@ -58,8 +58,8 @@
 ```html
 <section style="margin:6px 0 24px;">
   <section style="display:flex;align-items:center;margin-bottom:12px;">
-    <span style="display:inline-block;background:#FFB300;color:#3A2A00;font-size:12px;font-weight:800;padding:3px 10px;border-radius:3px 8px 8px 3px;letter-spacing:1px;margin-right:10px;"><span leaf="">火热招生</span></span>
-    <span style="display:inline-block;background:#FFF4F0;border:1px solid #F5C9C0;color:#E6392F;font-size:12px;font-weight:700;padding:3px 10px;border-radius:20px;"><span leaf="">{{招生城市 · 班型}}</span></span>
+    <span style="display:inline-block;background-color:#FFB300;color:#3A2A00;font-size:12px;font-weight:800;padding:3px 10px;border-radius:3px 8px 8px 3px;letter-spacing:1px;margin-right:10px;"><span leaf="">火热招生</span></span>
+    <span style="display:inline-block;background-color:#FFF4F0;border:1px solid #F5C9C0;color:#E6392F;font-size:12px;font-weight:700;padding:3px 10px;border-radius:20px;"><span leaf="">{{招生城市 · 班型}}</span></span>
   </section>
   <p style="font-size:26px;font-weight:900;color:#E6392F;margin:0 0 12px;line-height:1.4;letter-spacing:1px;">
     <span leaf="">{{招生大标题}}</span>
@@ -82,9 +82,9 @@
     <h3 style="font-size:20px;font-weight:900;color:#261F1F;margin:0;letter-spacing:0.5px;">
       <span leaf="">{{版块标题}}</span>
     </h3>
-    <span style="width:8px;height:8px;background:#E6392F;border-radius:2px;margin-left:10px;"><span leaf=""><br></span></span>
+    <span style="width:8px;height:8px;background-color:#E6392F;border-radius:2px;margin-left:10px;"><span leaf=""><br></span></span>
   </section>
-  <span style="display:block;height:3px;background:linear-gradient(90deg,#E6392F,#FFD0C8);margin-top:8px;border-radius:2px;"><span leaf=""><br></span></span>
+  <span style="display:block;height:3px;background-color:#E6392F;margin-top:8px;border-radius:2px;"><span leaf=""><br></span></span>
 </section>
 ```
 
@@ -113,7 +113,7 @@
 
 ### 5b. 浅橙底标签（核心概念 / 班型名）
 ```html
-<span style="background:#FDE8E3;color:#D22F27;padding:2px 8px;border-radius:3px;font-weight:700;"><span leaf="">全程班</span></span>
+<span style="background-color:#FDE8E3;color:#D22F27;padding:2px 8px;border-radius:3px;font-weight:700;"><span leaf="">全程班</span></span>
 ```
 
 ### 5c. 珊瑚下划线（正文默认标记）
@@ -123,12 +123,12 @@
 
 ### 5d. 行内代码 / 邮箱 / 关键词（灰底等宽）
 ```html
-<span style="background:#F6F2F1;color:#453B3A;padding:2px 6px;border-radius:3px;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:14px;"><span leaf="">code</span></span>
+<span style="background-color:#F6F2F1;color:#453B3A;padding:2px 6px;border-radius:3px;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:14px;"><span leaf="">code</span></span>
 ```
 
 ### 5e. 促销标签（特惠 / 限时，明黄 ≤2 处）
 ```html
-<span style="background:#FFB300;color:#3A2A00;font-weight:900;padding:2px 8px;border-radius:3px;"><span leaf="">限时特惠</span></span>
+<span style="background-color:#FFB300;color:#3A2A00;font-weight:900;padding:2px 8px;border-radius:3px;"><span leaf="">限时特惠</span></span>
 ```
 
 ---
@@ -136,7 +136,7 @@
 ## 组件 6 号召 / 提醒条（报名 / 截止）
 
 ```html
-<section style="border-left:5px solid #E6392F;padding:14px 0 14px 20px;margin-bottom:20px;background:#FFF4F0;">
+<section style="border-left:5px solid #E6392F;padding:14px 0 14px 20px;margin-bottom:20px;background-color:#FFF4F0;">
   <p style="font-size:16px;font-weight:800;color:#E6392F;margin:0;line-height:1.7;">
     <span leaf="">{{号召句 / 报名截止提醒}}</span>
   </p>
@@ -151,11 +151,11 @@
 
 ```html
 <section style="display:flex;margin-bottom:20px;">
-  <section style="flex:1;background:#FFF4F0;border:1px solid #F8D9D1;padding:16px 10px;margin-right:8px;text-align:center;">
+  <section style="flex:1;background-color:#FFF4F0;border:1px solid #F8D9D1;padding:16px 10px;margin-right:8px;text-align:center;">
     <p style="font-size:28px;font-weight:900;color:#E6392F;margin:0 0 2px;line-height:1;"><span leaf="">{{数字}}</span></p>
     <p style="font-size:11px;color:#9A8F8D;margin:0;"><span leaf="">{{说明}}</span></p>
   </section>
-  <section style="flex:1;background:#FFF8E6;border:1px solid #F5DEA8;padding:16px 10px;text-align:center;">
+  <section style="flex:1;background-color:#FFF8E6;border:1px solid #F5DEA8;padding:16px 10px;text-align:center;">
     <p style="font-size:28px;font-weight:900;color:#B8860B;margin:0 0 2px;line-height:1;"><span leaf="">{{数字}}</span></p>
     <p style="font-size:11px;color:#9A8F8D;margin:0;"><span leaf="">{{说明}}</span></p>
   </section>
@@ -170,13 +170,13 @@
 
 ```html
 <section style="display:flex;margin-bottom:20px;">
-  <section style="flex:1;border:1px solid #F0C9C0;border-radius:8px;padding:16px 12px;margin-right:8px;background:#FFFFFF;">
+  <section style="flex:1;border:1px solid #F0C9C0;border-radius:8px;padding:16px 12px;margin-right:8px;background-color:#FFFFFF;">
     <p style="font-size:11px;color:#E6392F;font-weight:800;letter-spacing:1px;margin:0 0 6px;"><span leaf="">{{班型标签}}</span></p>
     <p style="font-size:17px;font-weight:900;color:#261F1F;margin:0 0 8px;"><span leaf="">{{班型名}}</span></p>
     <p style="font-size:13px;color:#9A8F8D;margin:0 0 10px;line-height:1.6;"><span leaf="">{{开班 / 学制}}</span></p>
     <p style="font-size:20px;font-weight:900;color:#E6392F;margin:0;"><span leaf="">{{价格}}</span></p>
   </section>
-  <section style="flex:1;border:1px solid #F0C9C0;border-radius:8px;padding:16px 12px;background:#FFFFFF;">
+  <section style="flex:1;border:1px solid #F0C9C0;border-radius:8px;padding:16px 12px;background-color:#FFFFFF;">
     <p style="font-size:11px;color:#E6392F;font-weight:800;letter-spacing:1px;margin:0 0 6px;"><span leaf="">{{班型标签}}</span></p>
     <p style="font-size:17px;font-weight:900;color:#261F1F;margin:0 0 8px;"><span leaf="">{{班型名}}</span></p>
     <p style="font-size:13px;color:#9A8F8D;margin:0 0 10px;line-height:1.6;"><span leaf="">{{开班 / 学制}}</span></p>
@@ -194,11 +194,11 @@
 ```html
 <section style="margin-bottom:20px;">
   <section style="display:flex;align-items:flex-start;margin-bottom:10px;">
-    <span style="display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;background:#E6392F;color:#fff;font-size:14px;font-weight:800;border-radius:50%;flex-shrink:0;margin-right:12px;"><span leaf="">1</span></span>
+    <span style="display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;background-color:#E6392F;color:#fff;font-size:14px;font-weight:800;border-radius:50%;flex-shrink:0;margin-right:12px;"><span leaf="">1</span></span>
     <p style="font-size:15px;color:#453B3A;margin:0;line-height:1.8;flex:1;"><span leaf="">{{步骤说明}}</span></p>
   </section>
   <section style="display:flex;align-items:flex-start;margin-bottom:10px;">
-    <span style="display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;background:#E6392F;color:#fff;font-size:14px;font-weight:800;border-radius:50%;flex-shrink:0;margin-right:12px;"><span leaf="">2</span></span>
+    <span style="display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;background-color:#E6392F;color:#fff;font-size:14px;font-weight:800;border-radius:50%;flex-shrink:0;margin-right:12px;"><span leaf="">2</span></span>
     <p style="font-size:15px;color:#453B3A;margin:0;line-height:1.8;flex:1;"><span leaf="">{{步骤说明}}</span></p>
   </section>
 </section>
@@ -211,12 +211,12 @@
 > 珊瑚实底大按钮视觉 + 下方扫码 / 关键词引导。招生贴收敛 CTA。
 
 ```html
-<section style="border:1px solid #F0C9C0;background:#FFF4F0;border-radius:10px;padding:18px 16px;margin-bottom:22px;text-align:center;">
-  <section style="display:inline-block;background:linear-gradient(135deg,#E6392F,#FF7A59);border-radius:22px;padding:10px 30px;margin-bottom:12px;">
+<section style="border:1px solid #F0C9C0;background-color:#FFF4F0;border-radius:10px;padding:18px 16px;margin-bottom:22px;text-align:center;">
+  <section style="display:inline-block;background-color:#E6392F;border-radius:22px;padding:10px 30px;margin-bottom:12px;">
     <p style="font-size:17px;color:#FFFFFF;font-weight:900;margin:0;letter-spacing:2px;"><span leaf="">立即报名占座</span></p>
   </section>
   <p style="font-size:13px;color:#9A8F8D;margin:0;line-height:1.7;">
-    <span leaf="">长按识别二维码，或后台回复 <span style="background:#E6392F;color:#fff;padding:1px 7px;border-radius:3px;font-weight:800;"><span leaf="">【报名】</span></span> 获取报名通道</span>
+    <span leaf="">长按识别二维码，或后台回复 <span style="background-color:#E6392F;color:#fff;padding:1px 7px;border-radius:3px;font-weight:800;"><span leaf="">【报名】</span></span> 获取报名通道</span>
   </p>
 </section>
 ```
@@ -252,7 +252,7 @@
 ## 完整文章模板骨架
 
 ```html
-<section style="max-width:677px;margin:0 auto;background:#FFFFFF;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#453B3A;line-height:1.85;letter-spacing:0.2px;overflow-x:hidden;">
+<section style="max-width:677px;margin:0 auto;background-color:#FFFFFF;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#453B3A;line-height:1.85;letter-spacing:0.2px;overflow-x:hidden;">
 
   <!-- 1. 火热标题（组件2，最前） -->
   <!-- 2. 一句话卖点正文（组件4） -->

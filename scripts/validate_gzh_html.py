@@ -33,6 +33,10 @@ FORBIDDEN = [
     (re.compile(r"@import", re.I), "ERROR", "@import 不被支持"),
     (re.compile(r"display\s*:\s*grid", re.I), "ERROR", "display:grid 不被支持，请用 flex"),
     (re.compile(r"var\s*\(\s*--", re.I), "ERROR", "CSS 变量 var(--x) 不被支持，请写死值"),
+    (re.compile(r"(?<![a-zA-Z-])background\s*:", re.I), "ERROR",
+     "background 简写会被公众号编辑器过滤/覆盖导致底色丢失，必须改用 background-color"),
+    (re.compile(r"(?:linear|radial|conic)-gradient\s*\(", re.I), "ERROR",
+     "渐变会被公众号编辑器过滤，请改用 background-color 实色等效方案"),
     (re.compile(r"url\s*\(\s*['\"]?https?://[^)]*\.(woff2?|ttf|otf|eot)", re.I),
      "ERROR", "外部字体不被支持"),
 ]

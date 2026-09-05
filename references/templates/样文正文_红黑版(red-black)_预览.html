@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="2iZ54n5clX2fWiLJ0IFi7m">
+<head data-page-node-id="KI2yZEFLGpdSWUPjQv7pqg">
+<meta charset="UTF-8" data-page-node-id="ltDPd12A2YxVT9dgGd2x7T">
+<meta name="viewport" content="width=device-width, initial-scale=1" data-page-node-id="GrEvjnKQhOGiutxAAswlv9">
+<title>样文正文_红黑版(red-black) · 公众号排版预览</title>
+<style>
+  body{margin:0;background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;-webkit-text-size-adjust:100%;}
+  .gzh-toolbar{position:fixed;top:0;left:0;right:0;height:54px;background:#ffffff;box-shadow:0 1px 10px rgba(0,0,0,.08);display:flex;align-items:center;justify-content:space-between;padding:0 16px;z-index:99;}
+  .gzh-hint{font-size:13px;color:#6b7280;line-height:1.4;}
+  .gzh-hint b{color:#111827;}
+  .gzh-copy{background:#059669;color:#fff;border:0;border-radius:9px;padding:10px 20px;font-size:14px;font-weight:700;cursor:pointer;box-shadow:0 3px 10px rgba(5,150,105,.28);white-space:nowrap;transition:transform .08s,background .15s;}
+  .gzh-copy:hover{background:#047857;}
+  .gzh-copy:active{transform:translateY(1px);}
+  .gzh-toast{position:fixed;top:66px;left:50%;transform:translateX(-50%);background:#111827;color:#fff;padding:11px 20px;border-radius:10px;font-size:14px;font-weight:600;opacity:0;pointer-events:none;transition:opacity .25s;z-index:100;box-shadow:0 6px 20px rgba(0,0,0,.25);max-width:88vw;text-align:center;}
+  .gzh-toast.show{opacity:1;}
+  .gzh-stage{max-width:700px;margin:78px auto 64px;padding:0 8px;}
+  @media(max-width:520px){.gzh-hint{max-width:150px;}}
+</style>
+</head>
+<body data-page-node-id="Ewnj9je38s8QOUj23hrea4">
+<div class="gzh-toolbar" data-page-node-id="WTiBgG7WIGzkia8XqvgVb3">
+  <span class="gzh-hint" data-page-node-id="zLCo2qpfkUTfbesC6BB91A">👇 下方是排版效果 · 点右侧 <b data-page-node-id="jgTttDxhgY1GqtR2T5GKSn">复制</b> 直接粘到公众号</span>
+  <button class="gzh-copy" id="gzhCopyBtn" onclick="gzhCopy()" data-page-node-id="Vaf1jxrOhuFn4sjwyV4iZ7">📋 复制到公众号</button>
+</div>
+<div class="gzh-toast" id="gzhToast" data-page-node-id="QCttr9fXy2z5TXKfK8DJVb"></div>
+<div class="gzh-stage" data-page-node-id="FVsg6o72DrOCEsKA1i9iCX">
+  <div id="gzh-content" data-page-node-id="cCwFdIZnpvRU9UFUDgWdPS">
+<section style="margin:0;padding:0;background-color:#FFFFFF;" data-page-node-id="W8q7X9O8cJIoZ38MIuHh8o">
+<p style="margin:0 0 18px;font-size:16px;line-height:2.0;color:#000000;" data-page-node-id="RekT2lS6Vawl8l2kBAfz2f"><span leaf="" data-page-node-id="Q28J5f4MdO5axfucVxrETc">如果只看加粗部分，三十秒就能带走这篇的干货：</span><span leaf="" style="font-weight:700;color:#C00000;" data-page-node-id="1eXBXIt7Z5kAqfQRvg826H">红色的字，是每节最核心的方法</span><span leaf="" data-page-node-id="lmbuyFTwsTt9KXO0cpRPXo">；黑色加粗，是</span><span leaf="" style="font-weight:700;color:#000000;" data-page-node-id="CUI2NFnxyoXiYNT9aySiqm">关键信息和结论</span><span leaf="" data-page-node-id="JaK5qprcc3uGNEPHlHDhmz">。其余都是过程描述，不赶时间再细读。</span></p>
+
+<p style="margin:0 0 16px;font-size:16px;line-height:2.0;color:#000000;" data-page-node-id="23xppfudjAakR2CECPxJbL"><span leaf="" data-page-node-id="A9GgqctpnTrYslsGDCrhu1">先交代背景。我笔试</span><span leaf="" style="font-weight:700;color:#000000;" data-page-node-id="pXig527EiMx1Cdac01mohA">82 分，岗位第一</span><span leaf="" data-page-node-id="omau8VfOH5EISE6JBV2gmG">，从三月初开始准备，满打满算三个月。中间走过不少弯路——有一周纯自我感动式的抄笔记，抄了整整一本，什么都没记住。这篇就把真正有用的部分写出来。</span></p>
+
+<p style="margin:0 0 28px;padding-left:12px;border-left:2px solid #DDDDDD;font-size:14px;line-height:1.9;color:#767676;" data-page-node-id="ieu41XZrTPEzqVT2VjtIN5"><span leaf="" data-page-node-id="vP6Ziv60SaBBx1E9Z58CqH">（这里说句实话，我第一遍做计划做得特别漂亮，表格填得满满当当，然后第四天就崩了。别学我。）</span></p>
+
+<p style="margin:0 0 8px;font-size:17px;font-weight:700;color:#000000;line-height:1.7;" data-page-node-id="rEfSd3wHG3SKo6EyFmgmrQ"><span leaf="" data-page-node-id="4nvzLqVTuslkNgrc6lphah">关于做计划：宁可粗，不要满</span></p>
+<p style="margin:0 0 16px;font-size:16px;line-height:2.0;color:#000000;" data-page-node-id="F59Q0q96A1FHqvxdEjDIpy"><span leaf="" data-page-node-id="GoIvxESr81hAOzy4O6hb5V">我踩的第一个坑，就是把计划排到半小时。后来改成</span><span leaf="" style="font-weight:700;color:#C00000;" data-page-node-id="jJ4FS6HLY4vH7Xrh75fodC">每天只定三件事</span><span leaf="" data-page-node-id="wgIcbqg0l7lJUvEwBMCcFs">，完成率直接从四成拉到九成以上。做完就算赢。这不是懒，是给意外留空间——临时加班、状态差、朋友喊你吃饭，都不至于把整个计划冲垮。</span></p>
+<p style="margin:0 0 28px;font-size:16px;line-height:2.0;color:#000000;" data-page-node-id="Mk8YCOQifJkX7y6ecOIow8"><span leaf="" data-page-node-id="vKCm1HNFFrC38m1iWJqpUg">计划表我用的是一个普通的横线本，左页写三件事，右页写当天实际做了什么。晚上对一眼，差在哪自己心里有数。计划的价值不在“排得多满”，而在</span><span leaf="" style="font-weight:700;color:#000000;" data-page-node-id="nLGwPEzlfYDACF2YysRUbg">“第二天真的会翻开它”</span><span leaf="" data-page-node-id="sz97ZFBPyULwXb8THtiPX1">。</span></p>
+
+<p style="margin:0 0 8px;font-size:17px;font-weight:700;color:#000000;line-height:1.7;" data-page-node-id="Zou577qjqS5yh5VbrsD5hW"><span leaf="" data-page-node-id="K3bZOK6akpSQMLIstC3GnI">关于刷题：数量是底线，质量在复盘</span></p>
+<p style="margin:0 0 16px;font-size:16px;line-height:2.0;color:#000000;" data-page-node-id="xJVx3xueqXGXFGKpd6Wzgn"><span leaf="" data-page-node-id="VEAnqIbavoDFhhdvrfNNxC">三个月我总共刷了</span><span leaf="" style="font-weight:700;color:#000000;" data-page-node-id="mKrgBgqH3iLFxCz9w4bG4l">两千多道</span><span leaf="" data-page-node-id="iaaph85SqxylqOuHnQyCRk">题，不算多，但每一道都过了手。前期按模块刷，前七周过基础，后五周全在做题和复盘。到后期我只做整卷，</span><span leaf="" style="font-weight:700;color:#000000;" data-page-node-id="ugZZ7Tj9xGOBMfZSP4kjP5">每天二十道，限时做</span><span leaf="" data-page-node-id="npfHLMoTN2Xxkghuf7la3d">，做完立刻对答案，错的部分当天消化完，不过夜。</span></p>
+<p style="margin:0 0 28px;font-size:16px;line-height:2.0;color:#000000;" data-page-node-id="ZVF2yQ3BFC532g9Jxd1eIQ"><span leaf="" style="font-weight:700;color:#C00000;" data-page-node-id="wxHmZsMdnjCoxb8cw4O73f">限时是刷题的全部意义</span><span leaf="" data-page-node-id="9kjyi0SXzZ87aQWPuEYaJY">——考场不会给你无限时间。很多人平时正确率不错，一上考场就崩，差的就是这一步。另外别贪多，一天刷两百道不如二十道吃透。</span></p>
+
+<p style="margin:0 0 8px;font-size:17px;font-weight:700;color:#000000;line-height:1.7;" data-page-node-id="83YGq8Azq5XmX7VRp48kE6"><span leaf="" data-page-node-id="ylkEXgkapiDZF78rBPoqMr">关于错题本：一个本子，两种颜色</span></p>
+<p style="margin:0 0 16px;font-size:16px;line-height:2.0;color:#000000;" data-page-node-id="NgyyqGGKtGpXbwHZWDf8ip"><span leaf="" style="font-weight:700;color:#C00000;" data-page-node-id="RMRmDsrKiKf9UKc2roT5Gi">一个本子记两样东西</span><span leaf="" data-page-node-id="auhMLmLXM6RknvhlKYjwHo">：知识点和错误原因。每一道错题都</span><span leaf="" style="font-weight:700;color:#000000;" data-page-node-id="2EQZBZllCTi6ozh7N8p75x">写一句“为什么错”</span><span leaf="" data-page-node-id="ZZ64YW1pfw25yjk7sWO8Fo">——是没记住、没看清，还是思路偏了。写原因这一步最费时间，也最值钱。</span></p>
+<p style="margin:0 0 28px;font-size:16px;line-height:2.0;color:#000000;" data-page-node-id="3ZSQ7DuPWw7TPNgo5g0wpQ"><span leaf="" data-page-node-id="YEB6gDYsxBrWB29mReLifo">最后两周我只翻本子不刷题，考前一天把错因那栏从头读了一遍。</span><span leaf="" style="font-weight:700;color:#000000;" data-page-node-id="htCnOOv1iwiN9QZzVbB8Od">哪一页翻得越勤，说明哪一块越虚</span><span leaf="" data-page-node-id="WeBco45ikyQFl512j4qDOL">，上考场前心里反而踏实。</span></p>
+
+<p style="margin:0 0 8px;font-size:17px;font-weight:700;color:#000000;line-height:1.7;" data-page-node-id="xIXG45DCQqtQ8d9qB4EBF7"><span leaf="" data-page-node-id="6TrnYwBPKsFf4PmencdtKz">关于心态：焦虑的时候就去做题</span></p>
+<p style="margin:0 0 16px;font-size:16px;line-height:2.0;color:#000000;" data-page-node-id="nxiY8MlwOGE2JsOagMEYWv"><span leaf="" data-page-node-id="RVVW7xvBIboIvhSyeIMNyX">备考期我焦虑过好几次，尤其看到别人晒进度的时候。后来想通一件事：</span><span leaf="" style="font-weight:700;color:#C00000;" data-page-node-id="pOoCozSpn2AA3sJKz9XEx1">焦虑的时候就去做题</span><span leaf="" data-page-node-id="65utDefQqfRDPKTS0EP5W2">，做二十道，情绪自然落下来。</span><span leaf="" style="font-weight:700;color:#000000;" data-page-node-id="Eo0I1Qf5G3jgGUNVwuvvXE">比较是偷走效率的小偷</span><span leaf="" data-page-node-id="X4kagArQxGdSnZypAcbGa7">，你只需要跟昨天的自己对答案。</span></p>
+<p style="margin:0 0 20px;font-size:16px;line-height:2.0;color:#000000;" data-page-node-id="0FGCkQGxDKEERCNRjJnJNK"><span leaf="" data-page-node-id="oGi5f5HhDTQo3vLgRE7za9">方法说完了，其实没有一条是玄乎的。计划别排满、刷题要限时、错题写原因、焦虑就动笔——该做的都做了，剩下的交给时间。</span></p>
+<p style="margin:0;font-size:16px;line-height:2.0;color:#000000;" data-page-node-id="40dBzp0OW2YW6AjJKa1cOb"><span leaf="" data-page-node-id="Sz7Vb3latdFBCSAFXAizss">祝看到这篇的你，也能</span><span leaf="" style="font-weight:700;color:#000000;" data-page-node-id="tllRSftVCcttZy2e7E9Qq9">稳稳上岸</span><span leaf="" data-page-node-id="pRKU1JUtHbcmCFu0ueu3GC">。</span></p>
+</section>
+  </div>
+</div>
+<script>
+  function gzhShowToast(msg){
+    var t=document.getElementById('gzhToast');
+    t.textContent=msg;t.classList.add('show');
+    clearTimeout(t._timer);
+    t._timer=setTimeout(function(){t.classList.remove('show');},2800);
+  }
+  function gzhCopy(){
+    var el=document.getElementById('gzh-content');
+    // 选中渲染后的富文本节点并复制（等价于手动 Ctrl+A / Ctrl+C，保留全部样式）
+    var range=document.createRange();
+    range.selectNodeContents(el);
+    var sel=window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+    var ok=false;
+    try{ok=document.execCommand('copy');}catch(e){ok=false;}
+    sel.removeAllRanges();
+    var btn=document.getElementById('gzhCopyBtn');
+    if(ok){
+      gzhShowToast('✅ 已复制！去公众号编辑器按 Ctrl/⌘+V 粘贴即可');
+      var old=btn.textContent;btn.textContent='✅ 已复制';
+      setTimeout(function(){btn.textContent=old;},2200);
+    }else{
+      gzhShowToast('⚠ 自动复制失败，请手动全选(Ctrl/⌘+A)再复制(Ctrl/⌘+C)');
+    }
+  }
+</script>
+</body>
+</html>

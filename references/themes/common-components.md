@@ -15,11 +15,11 @@
 ### 1a. 深色代码块（默认，技术感强，适配所有主题）
 
 ```html
-<section style="margin:0 0 20px;border-radius:8px;overflow:hidden;background:#1E293B;box-shadow:0 4px 16px -8px rgba(15,23,42,0.4);">
-  <section style="display:flex;align-items:center;padding:9px 14px;background:#0F172A;">
-    <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FF5F56;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
-    <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FFBD2E;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
-    <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#27C93F;font-size:0;line-height:0;overflow:hidden;">.</span>
+<section style="margin:0 0 20px;border-radius:8px;overflow:hidden;background-color:#1E293B;box-shadow:0 4px 16px -8px rgba(15,23,42,0.4);">
+  <section style="display:flex;align-items:center;padding:9px 14px;background-color:#0F172A;">
+    <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background-color:#FF5F56;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+    <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background-color:#FFBD2E;margin-right:7px;font-size:0;line-height:0;overflow:hidden;">.</span>
+    <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background-color:#27C93F;font-size:0;line-height:0;overflow:hidden;">.</span>
     <span style="margin-left:12px;font-size:12px;color:#64748B;font-family:Consolas,Monaco,monospace;letter-spacing:1px;"><span leaf="">python</span></span>
   </section>
   <section style="padding:11px 14px;">
@@ -35,7 +35,7 @@
 ### 1b. 浅色代码块（适配浅色温和主题，如玫瑰粉/天蓝/焦糖棕）
 
 ```html
-<section style="margin:0 0 20px;border-radius:8px;overflow:hidden;background:#F6F8FA;border:1px solid #E5E7EB;border-left:3px solid #DC2626;">
+<section style="margin:0 0 20px;border-radius:8px;overflow:hidden;background-color:#F6F8FA;border:1px solid #E5E7EB;border-left:3px solid #DC2626;">
   <section style="padding:7px 14px;border-bottom:1px solid #E5E7EB;">
     <span style="font-size:12px;color:#9CA3AF;font-family:Consolas,Monaco,monospace;letter-spacing:1px;"><span leaf="">bash</span></span>
   </section>
@@ -50,7 +50,7 @@
 ### 1c. 行内代码（正文中的 `code` 短片段）
 
 ```html
-<span style="background:#F1F5F9;color:#DC2626;padding:1px 6px;border-radius:4px;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:14px;"><span leaf="">SKILL.md</span></span>
+<span style="background-color:#F1F5F9;color:#DC2626;padding:1px 6px;border-radius:4px;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:14px;"><span leaf="">SKILL.md</span></span>
 ```
 
 （文字色 `#DC2626` 换主题主色；底色保持中性浅灰。）
@@ -64,7 +64,7 @@
 ### 2a. 标准图片（带说明）
 
 ```html
-<section style="background:#FFF;border-radius:12px;padding:6px;border:1px solid #E5E7EB;box-shadow:0 4px 12px -2px rgba(0,0,0,0.08);margin-bottom:8px;">
+<section style="background-color:#FFF;border-radius:12px;padding:6px;border:1px solid #E5E7EB;box-shadow:0 4px 12px -2px rgba(0,0,0,0.08);margin-bottom:8px;">
   <section style="margin:0;border-radius:8px;overflow:hidden;">
     <span leaf=""><img src="图片URL" style="max-width:100%;height:auto;display:block;margin:0 auto;"></span>
   </section>
@@ -81,13 +81,13 @@
 ### 2b. GIF 动图（同图片，加"GIF 动图"角标）
 
 ```html
-<section style="background:#FFF;border-radius:12px;padding:6px;border:1px solid #E5E7EB;box-shadow:0 4px 12px -2px rgba(0,0,0,0.08);margin-bottom:8px;">
+<section style="background-color:#FFF;border-radius:12px;padding:6px;border:1px solid #E5E7EB;box-shadow:0 4px 12px -2px rgba(0,0,0,0.08);margin-bottom:8px;">
   <section style="margin:0;border-radius:8px;overflow:hidden;">
     <span leaf=""><img src="动图URL.gif" style="max-width:100%;height:auto;display:block;margin:0 auto;"></span>
   </section>
 </section>
 <p style="text-align:center;margin:0 0 24px;">
-  <span style="display:inline-block;background:#FEE2E2;color:#991B1B;font-size:11px;font-weight:700;padding:1px 8px;border-radius:4px;margin-right:6px;"><span leaf="">GIF 动图</span></span>
+  <span style="display:inline-block;background-color:#FEE2E2;color:#991B1B;font-size:11px;font-weight:700;padding:1px 8px;border-radius:4px;margin-right:6px;"><span leaf="">GIF 动图</span></span>
   <span style="font-size:12px;color:#9CA3AF;"><span leaf="">动图说明文字</span></span>
 </p>
 ```
@@ -101,7 +101,7 @@
 文章里 `【插入xxx】`、待录屏、待补 GIF/视频/截图等占位，一律用这个**居中**板块，不要用左对齐的提示块。所有排版风格通用，浅底柔虚线框 + 居中图标与说明，一眼看出"此处待补"。
 
 ```html
-<section style="margin:0 0 24px;padding:30px 20px;border:1.5px dashed #DAD7D2;border-radius:14px;background:#FAFAF8;text-align:center;">
+<section style="margin:0 0 24px;padding:30px 20px;border:1.5px dashed #DAD7D2;border-radius:14px;background-color:#FAFAF8;text-align:center;">
   <p style="margin:0 0 10px;font-size:26px;line-height:1;"><span leaf="">🎬</span></p>
   <p style="margin:0;font-size:14px;font-weight:700;color:#9CA3AF;letter-spacing:1px;"><span leaf="">待补素材</span></p>
   <p style="margin:8px 0 0;font-size:13px;color:#B8B5B0;line-height:1.7;"><span leaf="">此处插入：创建 skill 的录屏演示</span></p>
@@ -138,7 +138,7 @@
 
 ```html
 <p style="margin:28px 0 14px;">
-  <span style="display:inline-block;background:#DC2626;color:#FFFFFF;font-size:14px;font-weight:700;padding:5px 16px;border-radius:6px;"><span leaf="">小标题文字</span></span>
+  <span style="display:inline-block;background-color:#DC2626;color:#FFFFFF;font-size:14px;font-weight:700;padding:5px 16px;border-radius:6px;"><span leaf="">小标题文字</span></span>
 </p>
 ```
 
@@ -146,7 +146,7 @@
 
 ```html
 <p style="margin:24px 0 12px;font-size:15px;font-weight:800;color:#1C1917;line-height:1.6;">
-  <span style="display:inline-block;background:#FEE2E2;color:#991B1B;border-radius:5px;padding:1px 9px;margin-right:8px;font-weight:900;"><span leaf="">01</span></span>
+  <span style="display:inline-block;background-color:#FEE2E2;color:#991B1B;border-radius:5px;padding:1px 9px;margin-right:8px;font-weight:900;"><span leaf="">01</span></span>
   <span leaf="">要点标题</span>
 </p>
 ```
@@ -154,7 +154,7 @@
 ### 3d. 金句引用（左竖条版，取代旧的虚线框金句）
 
 ```html
-<section style="margin:0 0 24px;background:#FEF2F2;border-radius:0 10px 10px 0;border-left:4px solid #DC2626;padding:16px 20px;">
+<section style="margin:0 0 24px;background-color:#FEF2F2;border-radius:0 10px 10px 0;border-left:4px solid #DC2626;padding:16px 20px;">
   <p style="font-size:16px;font-weight:800;color:#991B1B;margin:0;line-height:1.8;">
     <span leaf="">「这里是核心观点或关键金句」</span>
   </p>
@@ -164,9 +164,9 @@
 ### 3e. 提示 / 旁注块（左竖条 + 类型小标签，取代旧的虚线提示框）
 
 ```html
-<section style="margin:0 0 24px;background:#FEF2F2;border-radius:0 8px 8px 0;border-left:4px solid #DC2626;padding:14px 18px;">
+<section style="margin:0 0 24px;background-color:#FEF2F2;border-radius:0 8px 8px 0;border-left:4px solid #DC2626;padding:14px 18px;">
   <p style="margin:0 0 6px;">
-    <span style="display:inline-block;background:#DC2626;color:#FFFFFF;font-size:11px;font-weight:700;padding:2px 10px;border-radius:4px;letter-spacing:1px;"><span leaf="">提示</span></span>
+    <span style="display:inline-block;background-color:#DC2626;color:#FFFFFF;font-size:11px;font-weight:700;padding:2px 10px;border-radius:4px;letter-spacing:1px;"><span leaf="">提示</span></span>
   </p>
   <p style="font-size:14px;color:#374151;margin:0;line-height:1.8;">
     <span leaf="">提示或旁注的正文内容</span>

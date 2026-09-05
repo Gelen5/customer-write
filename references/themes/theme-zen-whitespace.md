@@ -47,7 +47,7 @@
 ## 组件 1 全局容器
 
 ```html
-<section style="max-width: 677px;margin: 0 auto;background: #FFFFFF;font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;color: #525252;line-height: 1.9;letter-spacing: 0.3px;overflow-x: hidden;">
+<section style="max-width: 677px;margin: 0 auto;background-color:#FFFFFF;font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;color: #525252;line-height: 1.9;letter-spacing: 0.3px;overflow-x: hidden;">
 
   <!-- 所有组件放在这里 -->
 
@@ -111,7 +111,7 @@
 
 ```html
 <section style="padding: 0 16px;">
-  <section style="height: 1px;background: #E8E8E8;margin: 64px 0 0;">
+  <section style="height: 1px;background-color:#E8E8E8;margin: 64px 0 0;">
     <span leaf=""><br></span>
   </section>
 </section>
@@ -131,7 +131,7 @@
   <h3 style="font-family: 'Noto Serif SC', Georgia, 'Times New Roman', serif;font-size: 22px;font-weight: 700;color: #2B2B2B;margin: 0 0 16px;letter-spacing: 0.5px;line-height: 1.4;">
     <span leaf="">中文章节大标题</span>
   </h3>
-  <section style="width: 40px;height: 2px;background: #4A5D52;">
+  <section style="width: 40px;height: 2px;background-color:#4A5D52;">
     <span leaf=""><br></span>
   </section>
 
@@ -209,7 +209,7 @@
 > 极浅墨绿底 + 深墨绿字，低调不刺眼。用于核心概念（每篇 2~4 个）。
 
 ```html
-<span style="background: #EEF3F0;color: #3D5046;padding: 2px 6px;border-radius: 2px;font-weight: 600;font-size: 14px;"><span leaf="">关键词标签</span></span>
+<span style="background-color:#EEF3F0;color: #3D5046;padding: 2px 6px;border-radius: 2px;font-weight: 600;font-size: 14px;"><span leaf="">关键词标签</span></span>
 ```
 
 ### 7c. 留空（本风格不设此变体，保持克制）
@@ -241,7 +241,7 @@
 > 底部 40% 极浅绿色高亮，偶尔用于长句强调，仍保持克制。
 
 ```html
-<span style="background: linear-gradient(180deg, transparent 60%, #D6E4DC 60%);font-weight: 600;color: #2B2B2B;"><span leaf="">荧光笔效果的重要长句</span></span>
+<span style="background-color:linear-gradient(180deg, transparent 60%, #D6E4DC 60%);font-weight: 600;color: #2B2B2B;"><span leaf="">荧光笔效果的重要长句</span></span>
 ```
 
 ---
@@ -265,7 +265,7 @@
 > 极细左竖条（`#4A5D52`，2px），无底色，大 padding，适合旁注和补充说明。
 
 ```html
-<section style="border-left: 2px solid #4A5D52;padding: 10px 20px 10px 20px;margin: 0 16px 30px;background: #FFFFFF;">
+<section style="border-left: 2px solid #4A5D52;padding: 10px 20px 10px 20px;margin: 0 16px 30px;background-color:#FFFFFF;">
   <p style="font-size: 14px;color: #525252;margin: 0;line-height: 1.9;text-align: justify;">
     <span leaf="">旁注或补充说明内容，左侧细竖线划定边界，无色块，保持呼吸感。</span>
   </p>
@@ -340,7 +340,7 @@
 
 ```html
 <p style="margin-bottom: 26px;font-size: 15px;line-height: 1.9;text-align: justify;font-weight: 600;color: #2B2B2B;padding: 0 16px;">
-  <span style="background: linear-gradient(180deg, transparent 60%, #D6E4DC 60%);"><span leaf="">荧光笔标记的结论句，极浅墨绿底，克制温柔。</span></span>
+  <span style="background-color:linear-gradient(180deg, transparent 60%, #D6E4DC 60%);"><span leaf="">荧光笔标记的结论句，极浅墨绿底，克制温柔。</span></span>
 </p>
 ```
 
@@ -389,7 +389,7 @@
 ### 浅墨绿底深字（默认）
 
 ```html
-<span style="display: inline-block;background: #EEF3F0;color: #3D5046;font-size: 11px;font-weight: 600;padding: 2px 10px;border-radius: 2px;margin-right: 6px;letter-spacing: 0.5px;"><span leaf="">标签名</span></span>
+<span style="display: inline-block;background-color:#EEF3F0;color: #3D5046;font-size: 11px;font-weight: 600;padding: 2px 10px;border-radius: 2px;margin-right: 6px;letter-spacing: 0.5px;"><span leaf="">标签名</span></span>
 ```
 
 ### 细线描边（轻量，更透气）
@@ -408,9 +408,9 @@
 <section style="padding: 0 16px;">
   <section style="text-align: center;margin: 48px 0 40px;">
     <section style="display: flex;align-items: center;justify-content: center;">
-      <span style="height: 1px;width: 48px;background: #E8E8E8;margin-right: 16px;"></span>
+      <span style="height: 1px;width: 48px;background-color:#E8E8E8;margin-right: 16px;"></span>
       <span style="font-size: 10px;color: #A3A3A3;letter-spacing: 4px;font-weight: 400;"><span leaf="">END</span></span>
-      <span style="height: 1px;width: 48px;background: #E8E8E8;margin-left: 16px;"></span>
+      <span style="height: 1px;width: 48px;background-color:#E8E8E8;margin-left: 16px;"></span>
     </section>
   </section>
 </section>
@@ -438,7 +438,7 @@
 ## 完整文章模板骨架
 
 ```html
-<section style="max-width: 677px;margin: 0 auto;background: #FFFFFF;font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;color: #525252;line-height: 1.9;letter-spacing: 0.3px;overflow-x: hidden;">
+<section style="max-width: 677px;margin: 0 auto;background-color:#FFFFFF;font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;color: #525252;line-height: 1.9;letter-spacing: 0.3px;overflow-x: hidden;">
 
   <!-- 1. 开头引言卡片（纯白 + 上下细线 + 衬线大字） -->
   <!-- 组件 2 -->

@@ -42,7 +42,7 @@
 ## 组件 1 全局容器
 
 ```html
-<section style="max-width:677px;margin:0 auto;background:#FFFFFF;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#2E3A50;line-height:1.85;letter-spacing:0.3px;overflow-x:hidden;">
+<section style="max-width:677px;margin:0 auto;background-color:#FFFFFF;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#2E3A50;line-height:1.85;letter-spacing:0.3px;overflow-x:hidden;">
 
   <!-- 所有组件放在这里 -->
 
@@ -58,13 +58,13 @@
 ```html
 <section style="margin:6px 0 26px;">
   <section style="display:flex;align-items:center;border-bottom:2px solid #2456D8;padding-bottom:14px;">
-    <span style="display:inline-block;background:#2456D8;color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:3px;letter-spacing:1px;margin-right:10px;"><span leaf="">{{考务类型}}</span></span>
+    <span style="display:inline-block;background-color:#2456D8;color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:3px;letter-spacing:1px;margin-right:10px;"><span leaf="">{{考务类型}}</span></span>
     <span style="font-size:11px;color:#7B8799;letter-spacing:1px;"><span leaf="">{{发布机构 · 2026}}</span></span>
   </section>
   <p style="font-size:24px;font-weight:900;color:#16233C;margin:18px 0 10px;line-height:1.5;letter-spacing:0.5px;">
     <span leaf="">{{公告主标题}}</span>
   </p>
-  <section style="background:#F4F8FE;border:1px solid #E8EFFC;border-radius:6px;padding:12px 14px;">
+  <section style="background-color:#F4F8FE;border:1px solid #E8EFFC;border-radius:6px;padding:12px 14px;">
     <p style="font-size:13px;color:#2E3A50;margin:0;line-height:1.8;">
       <span leaf="">报名：</span><strong style="color:#2456D8;"><span leaf="">{{报名起止}}</span></strong>
       <span leaf="">　考试：</span><strong style="color:#2456D8;"><span leaf="">{{考试日期}}</span></strong>
@@ -82,7 +82,7 @@
 ```html
 <section style="margin-top:40px;margin-bottom:18px;">
   <section style="display:flex;align-items:center;border-bottom:1px solid #DFE7F5;padding-bottom:12px;">
-    <span style="display:inline-block;background:#2456D8;color:#FFFFFF;font-size:16px;font-weight:800;padding:3px 12px;border-radius:4px;margin-right:12px;line-height:1.4;"><span leaf="">{{一}}</span></span>
+    <span style="display:inline-block;background-color:#2456D8;color:#FFFFFF;font-size:16px;font-weight:800;padding:3px 12px;border-radius:4px;margin-right:12px;line-height:1.4;"><span leaf="">{{一}}</span></span>
     <h3 style="font-size:18px;font-weight:800;color:#16233C;margin:0;letter-spacing:0.5px;">
       <span leaf="">{{章节标题}}</span>
     </h3>
@@ -118,7 +118,7 @@
 
 ### 5b. 浅蓝底深蓝标签（核心概念 / 科目名）
 ```html
-<span style="background:#E8EFFC;color:#1E4EC2;padding:2px 7px;border-radius:3px;font-weight:700;"><span leaf="">《公共基础知识》</span></span>
+<span style="background-color:#E8EFFC;color:#1E4EC2;padding:2px 7px;border-radius:3px;font-weight:700;"><span leaf="">《公共基础知识》</span></span>
 ```
 
 ### 5c. 蓝下划线（正文默认标记）
@@ -128,7 +128,7 @@
 
 ### 5d. 行内代码 / 邮箱 / 关键词（灰底等宽）
 ```html
-<span style="background:#F1F4F9;color:#16233C;padding:2px 6px;border-radius:3px;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:14px;"><span leaf="">code</span></span>
+<span style="background-color:#F1F4F9;color:#16233C;padding:2px 6px;border-radius:3px;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:14px;"><span leaf="">code</span></span>
 ```
 
 ### 5e. 天蓝锚点（流程高亮，全篇 ≤3 处）
@@ -141,7 +141,7 @@
 ## 组件 6 关键时间提醒条（报名 / 打印 / 截止）
 
 ```html
-<section style="border-left:4px solid #2456D8;padding:14px 0 14px 20px;margin-bottom:22px;background:#F4F8FE;">
+<section style="border-left:4px solid #2456D8;padding:14px 0 14px 20px;margin-bottom:22px;background-color:#F4F8FE;">
   <p style="font-size:14px;font-weight:700;color:#2456D8;margin:0;line-height:1.8;">
     <span leaf="">{{节点}}：{{关键时间}}</span>
   </p>
@@ -158,8 +158,8 @@
 <section style="margin-bottom:22px;">
   <section style="display:flex;align-items:flex-start;">
     <section style="display:flex;flex-direction:column;align-items:center;margin-right:16px;flex-shrink:0;">
-      <span style="width:12px;height:12px;background:#2456D8;border-radius:50%;margin-top:6px;"><span leaf=""><br></span></span>
-      <span style="width:2px;flex:1;background:#B8CCF7;min-height:38px;"><span leaf=""><br></span></span>
+      <span style="width:12px;height:12px;background-color:#2456D8;border-radius:50%;margin-top:6px;"><span leaf=""><br></span></span>
+      <span style="width:2px;flex:1;background-color:#B8CCF7;min-height:38px;"><span leaf=""><br></span></span>
     </section>
     <section style="padding-bottom:16px;flex:1;">
       <p style="font-size:12px;color:#3E8EF7;font-weight:700;margin:0 0 4px;letter-spacing:1px;"><span leaf="">{{时间}}</span></p>
@@ -170,7 +170,7 @@
 
   <section style="display:flex;align-items:flex-start;">
     <section style="display:flex;flex-direction:column;align-items:center;margin-right:16px;flex-shrink:0;">
-      <span style="width:12px;height:12px;background:#2456D8;border-radius:50%;margin-top:6px;"><span leaf=""><br></span></span>
+      <span style="width:12px;height:12px;background-color:#2456D8;border-radius:50%;margin-top:6px;"><span leaf=""><br></span></span>
     </section>
     <section style="padding-bottom:4px;flex:1;">
       <p style="font-size:12px;color:#3E8EF7;font-weight:700;margin:0 0 4px;letter-spacing:1px;"><span leaf="">{{时间}}</span></p>
@@ -188,11 +188,11 @@
 ```html
 <section style="margin-bottom:22px;">
   <section style="display:flex;align-items:flex-start;margin-bottom:12px;">
-    <span style="display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;background:#2456D8;color:#fff;font-size:13px;font-weight:700;border-radius:4px;flex-shrink:0;margin-top:2px;margin-right:12px;"><span leaf="">1</span></span>
+    <span style="display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;background-color:#2456D8;color:#fff;font-size:13px;font-weight:700;border-radius:4px;flex-shrink:0;margin-top:2px;margin-right:12px;"><span leaf="">1</span></span>
     <p style="font-size:15px;color:#2E3A50;margin:0;line-height:1.8;flex:1;"><span leaf="">{{条项内容}}</span></p>
   </section>
   <section style="display:flex;align-items:flex-start;margin-bottom:12px;">
-    <span style="display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;background:#2456D8;color:#fff;font-size:13px;font-weight:700;border-radius:4px;flex-shrink:0;margin-top:2px;margin-right:12px;"><span leaf="">2</span></span>
+    <span style="display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;background-color:#2456D8;color:#fff;font-size:13px;font-weight:700;border-radius:4px;flex-shrink:0;margin-top:2px;margin-right:12px;"><span leaf="">2</span></span>
     <p style="font-size:15px;color:#2E3A50;margin:0;line-height:1.8;flex:1;"><span leaf="">{{条项内容}}</span></p>
   </section>
 </section>
@@ -206,12 +206,12 @@
 
 ```html
 <section style="display:flex;margin-bottom:20px;">
-  <section style="flex:1;background:#F4F8FE;border:1px solid #E8EFFC;border-radius:6px;padding:16px 12px;margin-right:8px;text-align:center;">
+  <section style="flex:1;background-color:#F4F8FE;border:1px solid #E8EFFC;border-radius:6px;padding:16px 12px;margin-right:8px;text-align:center;">
     <p style="font-size:11px;color:#7B8799;margin:0 0 4px;"><span leaf="">{{模块}}</span></p>
     <p style="font-size:15px;font-weight:800;color:#16233C;margin:0 0 4px;"><span leaf="">{{科目名}}</span></p>
     <p style="font-size:13px;color:#2456D8;font-weight:700;margin:0;"><span leaf="">{{题量 · 分值}}</span></p>
   </section>
-  <section style="flex:1;background:#F4F8FE;border:1px solid #E8EFFC;border-radius:6px;padding:16px 12px;text-align:center;">
+  <section style="flex:1;background-color:#F4F8FE;border:1px solid #E8EFFC;border-radius:6px;padding:16px 12px;text-align:center;">
     <p style="font-size:11px;color:#7B8799;margin:0 0 4px;"><span leaf="">{{模块}}</span></p>
     <p style="font-size:15px;font-weight:800;color:#16233C;margin:0 0 4px;"><span leaf="">{{科目名}}</span></p>
     <p style="font-size:13px;color:#2456D8;font-weight:700;margin:0;"><span leaf="">{{题量 · 分值}}</span></p>
@@ -227,11 +227,11 @@
 
 ```html
 <section style="display:flex;margin-bottom:20px;">
-  <section style="flex:1;background:#F4F8FE;border:1px solid #E8EFFC;padding:18px 10px;margin-right:8px;text-align:center;">
+  <section style="flex:1;background-color:#F4F8FE;border:1px solid #E8EFFC;padding:18px 10px;margin-right:8px;text-align:center;">
     <p style="font-size:30px;font-weight:900;color:#2456D8;margin:0 0 4px;line-height:1;"><span leaf="">{{数字}}</span></p>
     <p style="font-size:11px;color:#7B8799;margin:0;"><span leaf="">{{说明}}</span></p>
   </section>
-  <section style="flex:1;background:#F4F8FE;border:1px solid #E8EFFC;padding:18px 10px;text-align:center;">
+  <section style="flex:1;background-color:#F4F8FE;border:1px solid #E8EFFC;padding:18px 10px;text-align:center;">
     <p style="font-size:30px;font-weight:900;color:#2456D8;margin:0 0 4px;line-height:1;"><span leaf="">{{数字}}</span></p>
     <p style="font-size:11px;color:#7B8799;margin:0;"><span leaf="">{{说明}}</span></p>
   </section>
@@ -255,12 +255,12 @@
 ## 组件 12 扫码查成绩 / 看大纲引导
 
 ```html
-<section style="border:1px solid #E8EFFC;background:#F4F8FE;border-radius:8px;padding:16px;margin-bottom:22px;text-align:center;">
+<section style="border:1px solid #E8EFFC;background-color:#F4F8FE;border-radius:8px;padding:16px;margin-bottom:22px;text-align:center;">
   <p style="font-size:15px;font-weight:800;color:#2456D8;margin:0 0 6px;">
     <span leaf="">成绩公布 / 大纲下载提示</span>
   </p>
   <p style="font-size:13px;color:#5B6B82;margin:0;">
-    <span leaf="">公众号后台回复 <span style="background:#2456D8;color:#fff;padding:2px 8px;border-radius:3px;font-weight:800;"><span leaf="">【{{数字}}】</span></span> 获取考务安排</span>
+    <span leaf="">公众号后台回复 <span style="background-color:#2456D8;color:#fff;padding:2px 8px;border-radius:3px;font-weight:800;"><span leaf="">【{{数字}}】</span></span> 获取考务安排</span>
   </p>
 </section>
 ```
@@ -272,9 +272,9 @@
 ```html
 <section style="margin-top:8px;">
   <section style="display:flex;align-items:center;justify-content:center;margin-bottom:24px;">
-    <span style="height:1px;width:46px;background:#B8CCF7;margin-right:12px;"><span leaf=""><br></span></span>
+    <span style="height:1px;width:46px;background-color:#B8CCF7;margin-right:12px;"><span leaf=""><br></span></span>
     <span style="font-size:11px;color:#2456D8;letter-spacing:3px;font-weight:800;"><span leaf="">END · 预祝上岸</span></span>
-    <span style="height:1px;width:46px;background:#B8CCF7;margin-left:12px;"><span leaf=""><br></span></span>
+    <span style="height:1px;width:46px;background-color:#B8CCF7;margin-left:12px;"><span leaf=""><br></span></span>
   </section>
 </section>
 ```
@@ -284,7 +284,7 @@
 ## 完整文章模板骨架
 
 ```html
-<section style="max-width:677px;margin:0 auto;background:#FFFFFF;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#2E3A50;line-height:1.85;letter-spacing:0.3px;overflow-x:hidden;">
+<section style="max-width:677px;margin:0 auto;background-color:#FFFFFF;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#2E3A50;line-height:1.85;letter-spacing:0.3px;overflow-x:hidden;">
 
   <!-- 1. 考务标头（组件2，含报名/考试时间，最前） -->
   <!-- 2. 第一章节（组件3）→ 章内：正文4 + 时间提醒6 -->

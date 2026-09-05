@@ -49,7 +49,7 @@
 ## 组件 1 全局容器
 
 ```html
-<section style="max-width:677px;margin:0 auto;padding:8px;box-sizing:border-box;background:#fdfdf8;color:#4d4f46;font-family:'IBM Plex Sans',-apple-system,system-ui,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;line-height:1.75;">
+<section style="max-width:677px;margin:0 auto;padding:8px;box-sizing:border-box;background-color:#fdfdf8;color:#4d4f46;font-family:'IBM Plex Sans',-apple-system,system-ui,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;line-height:1.75;">
 
   <!-- 所有组件放在这里，第一个子元素是组件 2 头图卡，其余组件均自带 margin-top:24px -->
 
@@ -65,12 +65,12 @@
 **可替换字段**：`{{内刊标签}}` `{{日期}}` `{{旧标题占位}}`（可选，删除线小字，无需要时整行删除）`{{主标题}}` `{{强调词}}` `{{副标题说明}}` `{{底部摘要}}` `{{标签1}}` `{{标签2}}`
 
 ```html
-<section style="background:#fdfdf8;border:1px solid #bfc1b7;border-radius:6px;overflow:hidden;font-family:'IBM Plex Sans',-apple-system,system-ui,sans-serif;">
+<section style="background-color:#fdfdf8;border:1px solid #bfc1b7;border-radius:6px;overflow:hidden;font-family:'IBM Plex Sans',-apple-system,system-ui,sans-serif;">
   <section style="padding:28px 24px 22px;">
     <section style="display:flex;align-items:center;gap:8px;margin-bottom:22px;">
-      <span style="width:8px;height:8px;background:#1e1f23;border-radius:50%;display:inline-block;overflow:hidden;vertical-align:middle;font-size:0;line-height:0;"><span leaf="">&nbsp;</span></span>
+      <span style="width:8px;height:8px;background-color:#1e1f23;border-radius:50%;display:inline-block;overflow:hidden;vertical-align:middle;font-size:0;line-height:0;"><span leaf="">&nbsp;</span></span>
       <span style="font-size:10px;font-weight:700;letter-spacing:3px;color:#65675e;"><span leaf="">{{内刊标签}}</span></span>
-      <span style="flex:1;height:1px;background:#bfc1b7;display:inline-block;overflow:hidden;vertical-align:middle;font-size:0;line-height:0;"><span leaf="">&nbsp;</span></span>
+      <span style="flex:1;height:1px;background-color:#bfc1b7;display:inline-block;overflow:hidden;vertical-align:middle;font-size:0;line-height:0;"><span leaf="">&nbsp;</span></span>
       <span style="font-size:10px;color:#9ea096;font-weight:500;font-variant-numeric:tabular-nums;"><span leaf="">{{日期}}</span></span>
     </section>
     <section style="display:flex;align-items:stretch;gap:18px;">
@@ -80,12 +80,12 @@
           <span leaf="">{{主标题}}</span><span style="color:#4d4f46;"><span leaf="">&nbsp;·&nbsp;</span></span><span style="border-bottom:3px solid #e5e7e0;"><span leaf="">{{强调词}}</span></span>
         </p>
         <section style="display:flex;align-items:center;gap:4px;margin-bottom:12px;">
-          <span style="width:22px;height:3px;background:#1e1f23;border-radius:2px;display:inline-block;overflow:hidden;vertical-align:middle;font-size:0;line-height:0;"><span leaf="">&nbsp;</span></span>
-          <span style="width:8px;height:3px;background:#bfc1b7;border-radius:2px;display:inline-block;overflow:hidden;vertical-align:middle;font-size:0;line-height:0;"><span leaf="">&nbsp;</span></span>
+          <span style="width:22px;height:3px;background-color:#1e1f23;border-radius:2px;display:inline-block;overflow:hidden;vertical-align:middle;font-size:0;line-height:0;"><span leaf="">&nbsp;</span></span>
+          <span style="width:8px;height:3px;background-color:#bfc1b7;border-radius:2px;display:inline-block;overflow:hidden;vertical-align:middle;font-size:0;line-height:0;"><span leaf="">&nbsp;</span></span>
         </section>
         <p style="font-size:13px;color:#65675e;margin:0;line-height:1.7;"><span leaf="">{{副标题说明}}</span></p>
       </section>
-      <section style="flex-shrink:0;width:112px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#eeefe9;border:1px dashed #bfc1b7;border-radius:6px;padding:8px;">
+      <section style="flex-shrink:0;width:112px;display:flex;flex-direction:column;align-items:center;justify-content:center;background-color:#eeefe9;border:1px dashed #bfc1b7;border-radius:6px;padding:8px;">
         <svg width="72" height="72" viewBox="0 0 64 64" aria-hidden="true" style="display:block;">
           <ellipse cx="32" cy="36" rx="22" ry="18" fill="none" stroke="#4d4f46" stroke-width="2"></ellipse>
           <circle cx="26" cy="30" r="3" fill="#4d4f46"></circle>
@@ -97,11 +97,11 @@
       </section>
     </section>
   </section>
-  <section style="background:#1e1f23;padding:11px 24px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;">
+  <section style="background-color:#1e1f23;padding:11px 24px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;">
     <p style="font-size:12px;color:rgba(255,255,255,0.92);margin:0;font-weight:600;"><span leaf="">{{底部摘要}}</span></p>
     <section style="display:flex;gap:6px;flex-wrap:wrap;">
-      <span style="background:#e5e7e0;color:#23251d;padding:3px 8px;border-radius:4px;font-size:8px;font-weight:700;border:1px solid #bfc1b7;"><span leaf="">{{标签1}}</span></span>
-      <span style="background:#e5e7e0;color:#23251d;padding:3px 8px;border-radius:4px;font-size:8px;font-weight:700;border:1px solid #bfc1b7;"><span leaf="">{{标签2}}</span></span>
+      <span style="background-color:#e5e7e0;color:#23251d;padding:3px 8px;border-radius:4px;font-size:8px;font-weight:700;border:1px solid #bfc1b7;"><span leaf="">{{标签1}}</span></span>
+      <span style="background-color:#e5e7e0;color:#23251d;padding:3px 8px;border-radius:4px;font-size:8px;font-weight:700;border:1px solid #bfc1b7;"><span leaf="">{{标签2}}</span></span>
     </section>
   </section>
 </section>
@@ -125,7 +125,7 @@
         <p style="margin:0;font-size:24px;font-weight:800;color:#23251d;line-height:1;letter-spacing:-2px;"><span leaf="">{{编号}}</span></p>
         <p style="margin:0;font-size:8px;font-weight:700;color:#9ea096;letter-spacing:2px;"><span leaf="">PART</span></p>
       </section>
-      <span style="width:1px;height:36px;background:#bfc1b7;flex-shrink:0;display:inline-block;overflow:hidden;vertical-align:middle;font-size:0;line-height:0;"><span leaf="">&nbsp;</span></span>
+      <span style="width:1px;height:36px;background-color:#bfc1b7;flex-shrink:0;display:inline-block;overflow:hidden;vertical-align:middle;font-size:0;line-height:0;"><span leaf="">&nbsp;</span></span>
       <section>
         <p style="margin:0 0 1px;font-size:17px;font-weight:800;color:#23251d;letter-spacing:0.2px;"><span leaf="">{{标题}}</span></p>
         <p style="margin:0;font-size:11px;font-weight:600;color:#65675e;letter-spacing:1.2px;"><span leaf="">{{副标题}}</span></p>
@@ -145,7 +145,7 @@
 
 ```html
 <section style="margin-top:24px;">
-  <section style="background:#eeefe9;border:1px solid #bfc1b7;border-radius:6px;padding:12px 16px;font-family:'IBM Plex Sans',-apple-system,sans-serif;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;">
+  <section style="background-color:#eeefe9;border:1px solid #bfc1b7;border-radius:6px;padding:12px 16px;font-family:'IBM Plex Sans',-apple-system,sans-serif;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;">
     <p style="margin:0;font-size:10px;font-weight:800;letter-spacing:4px;color:#23251d;"><span leaf="">{{刊头标签}}</span></p>
     <section style="display:flex;gap:8px;flex-wrap:wrap;">
       <span style="font-size:10px;color:#65675e;font-weight:700;"><span leaf="">{{版本号}}</span></span>
@@ -165,7 +165,7 @@
 
 ```html
 <section style="margin-top:24px;">
-  <section style="background:#1e1f23;border:1px solid #23251d;border-radius:6px;overflow:hidden;font-family:'IBM Plex Sans',-apple-system,sans-serif;">
+  <section style="background-color:#1e1f23;border:1px solid #23251d;border-radius:6px;overflow:hidden;font-family:'IBM Plex Sans',-apple-system,sans-serif;">
     <section style="padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;">
       <p style="margin:0;font-size:10px;font-weight:800;letter-spacing:4px;color:#ffffff;"><span leaf="">{{刊头标签}}</span></p>
       <p style="margin:0;font-size:10px;color:rgba(255,255,255,0.68);"><span leaf="">{{说明文字}}</span></p>
@@ -184,9 +184,9 @@
 
 ```html
 <section style="margin-top:24px;">
-  <section style="background:#fdfdf8;border:1px solid #bfc1b7;border-radius:6px;padding:14px 16px;font-family:'IBM Plex Sans',-apple-system,sans-serif;display:flex;align-items:center;justify-content:space-between;gap:10px;">
+  <section style="background-color:#fdfdf8;border:1px solid #bfc1b7;border-radius:6px;padding:14px 16px;font-family:'IBM Plex Sans',-apple-system,sans-serif;display:flex;align-items:center;justify-content:space-between;gap:10px;">
     <section style="display:flex;align-items:center;gap:10px;">
-      <span style="display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:#1e1f23;color:#fff;font-size:11px;font-weight:800;"><span leaf="">{{期号}}</span></span>
+      <span style="display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background-color:#1e1f23;color:#fff;font-size:11px;font-weight:800;"><span leaf="">{{期号}}</span></span>
       <section>
         <p style="margin:0 0 3px;font-size:11px;font-weight:800;color:#23251d;letter-spacing:1px;"><span leaf="">{{标题}}</span></p>
         <p style="margin:0;font-size:11px;color:#65675e;"><span leaf="">{{说明}}</span></p>
@@ -209,7 +209,7 @@
 <section style="margin-top:24px;">
   <section style="font-family:'IBM Plex Sans',-apple-system,sans-serif;">
     <section style="display:flex;align-items:center;gap:10px;">
-      <span style="background:#1e1f23;color:#fff;padding:4px 10px;border-radius:4px;font-size:11px;font-weight:700;"><span leaf="">{{步骤序号}}</span></span>
+      <span style="background-color:#1e1f23;color:#fff;padding:4px 10px;border-radius:4px;font-size:11px;font-weight:700;"><span leaf="">{{步骤序号}}</span></span>
       <span style="font-size:14px;font-weight:600;color:#4d4f46;"><span leaf="">{{步骤标题}}</span></span>
     </section>
   </section>
@@ -281,7 +281,7 @@
 **b. 浅底高亮框** —— 关键信息/数据
 
 ```html
-<span style="background:#eeefe9;padding:1px 5px;border-radius:4px;font-weight:600;color:#23251d;border:1px solid #bfc1b7;"><span leaf="">{{文字}}</span></span>
+<span style="background-color:#eeefe9;padding:1px 5px;border-radius:4px;font-weight:600;color:#23251d;border:1px solid #bfc1b7;"><span leaf="">{{文字}}</span></span>
 ```
 
 **c. 橙色下划线** —— 重要短语（正文关键词的默认标记，对应 theme-index 权威下划线值）
@@ -293,7 +293,7 @@
 **d. 行内代码标签** —— 技术名词/字段名/命令
 
 ```html
-<span style="background:#eeefe9;color:#23251d;padding:2px 6px;border-radius:4px;font-family:ui-monospace,Menlo,Monaco,Consolas,monospace;font-size:13px;border:1px solid #b6b7af;"><span leaf="">{{代码}}</span></span>
+<span style="background-color:#eeefe9;color:#23251d;padding:2px 6px;border-radius:4px;font-family:ui-monospace,Menlo,Monaco,Consolas,monospace;font-size:13px;border:1px solid #b6b7af;"><span leaf="">{{代码}}</span></span>
 ```
 
 **e. 删除线旧词** —— 与"新旧对照段落"（组件 12）配套，单独用时表示"已废弃/被替代的说法"
@@ -314,7 +314,7 @@
 <section style="margin-top:24px;">
   <section style="font-family:'IBM Plex Sans',-apple-system,sans-serif;">
     <p style="margin:0;font-size:14px;color:#4d4f46;line-height:1.9;">
-      <span leaf="">{{正文前半}}&nbsp;</span><span style="background:#eeefe9;color:#23251d;padding:2px 6px;border-radius:4px;font-family:ui-monospace,Menlo,Monaco,Consolas,monospace;font-size:13px;border:1px solid #b6b7af;"><span leaf="">{{代码}}</span></span><span leaf="">&nbsp;{{正文后半}}</span>
+      <span leaf="">{{正文前半}}&nbsp;</span><span style="background-color:#eeefe9;color:#23251d;padding:2px 6px;border-radius:4px;font-family:ui-monospace,Menlo,Monaco,Consolas,monospace;font-size:13px;border:1px solid #b6b7af;"><span leaf="">{{代码}}</span></span><span leaf="">&nbsp;{{正文后半}}</span>
     </p>
   </section>
 </section>
@@ -334,7 +334,7 @@
     <p style="margin:0;font-size:14px;line-height:1.9;text-align:justify;color:#4d4f46;">
       <span style="font-size:14px;color:#9ea096;letter-spacing:0.3px;text-decoration:line-through;"><span leaf="">{{旧表述}}</span></span>
       <span style="margin-left:6px;font-weight:700;color:#23251d;"><span leaf="">{{新表述}}</span></span>
-      <span style="margin-left:6px;background:#e5e7e0;padding:1px 5px;border-radius:4px;font-weight:600;color:#23251d;border:1px solid #bfc1b7;"><span leaf="">{{差异点}}</span></span>
+      <span style="margin-left:6px;background-color:#e5e7e0;padding:1px 5px;border-radius:4px;font-weight:600;color:#23251d;border:1px solid #bfc1b7;"><span leaf="">{{差异点}}</span></span>
     </p>
   </section>
 </section>
@@ -370,12 +370,12 @@
 
 ```html
 <section style="margin-top:24px;">
-  <section style="background:#fdfdf8;border:1px solid #bfc1b7;border-radius:6px;overflow:hidden;font-family:'IBM Plex Sans',-apple-system,sans-serif;">
-    <section style="padding:10px 16px;background:#1e1f23;display:flex;align-items:center;justify-content:space-between;gap:10px;">
+  <section style="background-color:#fdfdf8;border:1px solid #bfc1b7;border-radius:6px;overflow:hidden;font-family:'IBM Plex Sans',-apple-system,sans-serif;">
+    <section style="padding:10px 16px;background-color:#1e1f23;display:flex;align-items:center;justify-content:space-between;gap:10px;">
       <p style="margin:0;font-size:10px;font-weight:800;letter-spacing:2px;color:#ffffff;"><span leaf="">{{批注标签}}</span></p>
       <span style="font-size:10px;color:rgba(255,255,255,0.65);"><span leaf="">{{批注小字}}</span></span>
     </section>
-    <section style="padding:16px 18px 18px;background:#eeefe9;">
+    <section style="padding:16px 18px 18px;background-color:#eeefe9;">
       <p style="margin:0;font-size:14px;line-height:1.9;color:#4d4f46;text-align:justify;"><span leaf="">{{编者按正文}}</span></p>
     </section>
   </section>
@@ -393,7 +393,7 @@
 ```html
 <section style="margin-top:24px;">
   <section style="font-family:'IBM Plex Sans',-apple-system,sans-serif;">
-    <section style="background:#fdfdf8;border-radius:6px;padding:16px 18px;border:1px solid #bfc1b7;">
+    <section style="background-color:#fdfdf8;border-radius:6px;padding:16px 18px;border:1px solid #bfc1b7;">
       <p style="font-size:14px;color:#4d4f46;margin:0;line-height:1.8;text-align:justify;">
         <strong style="color:#23251d;border-bottom:3px solid #ed7b2f;"><span leaf="">{{重点观点}}</span></strong><span leaf="">&nbsp;{{补充说明}}</span>
       </p>
@@ -410,7 +410,7 @@
 
 ```html
 <section style="margin-top:24px;">
-  <hr style="border:none;height:2px;background:#bfc1b7;margin:0;">
+  <hr style="border:none;height:2px;background-color:#bfc1b7;margin:0;">
 </section>
 ```
 
@@ -423,9 +423,9 @@
 ```html
 <section style="margin-top:24px;">
   <section style="display:flex;align-items:center;justify-content:center;gap:10px;font-family:'IBM Plex Sans',-apple-system,sans-serif;">
-    <span style="width:8px;height:8px;border-radius:50%;background:#4d4f46;display:inline-block;overflow:hidden;vertical-align:middle;font-size:0;line-height:0;"><span leaf="">&nbsp;</span></span>
-    <span style="width:8px;height:8px;border-radius:50%;background:#bfc1b7;display:inline-block;overflow:hidden;vertical-align:middle;font-size:0;line-height:0;"><span leaf="">&nbsp;</span></span>
-    <span style="width:8px;height:8px;border-radius:50%;background:#ed7b2f;display:inline-block;overflow:hidden;vertical-align:middle;font-size:0;line-height:0;"><span leaf="">&nbsp;</span></span>
+    <span style="width:8px;height:8px;border-radius:50%;background-color:#4d4f46;display:inline-block;overflow:hidden;vertical-align:middle;font-size:0;line-height:0;"><span leaf="">&nbsp;</span></span>
+    <span style="width:8px;height:8px;border-radius:50%;background-color:#bfc1b7;display:inline-block;overflow:hidden;vertical-align:middle;font-size:0;line-height:0;"><span leaf="">&nbsp;</span></span>
+    <span style="width:8px;height:8px;border-radius:50%;background-color:#ed7b2f;display:inline-block;overflow:hidden;vertical-align:middle;font-size:0;line-height:0;"><span leaf="">&nbsp;</span></span>
   </section>
 </section>
 ```
@@ -441,7 +441,7 @@
 ```html
 <section style="margin-top:24px;">
   <section style="padding:0 8px;margin:0 -8px;font-family:'IBM Plex Sans',-apple-system,sans-serif;">
-    <section style="background:#fdfdf8;border-radius:6px;padding:6px;border:1px solid #bfc1b7;">
+    <section style="background-color:#fdfdf8;border-radius:6px;padding:6px;border:1px solid #bfc1b7;">
       <figure style="margin:0;border-radius:4px;overflow:hidden;">
         <span leaf=""><img src="{{图片URL}}" alt="通栏图片" style="max-width:100%;height:auto;display:block;margin:0 auto;"></span>
       </figure>
@@ -481,9 +481,9 @@
 
 ```html
 <section style="margin-top:24px;">
-  <section style="padding:18px;border-radius:6px;background:#fdfdf8;border:1px solid #bfc1b7;text-align:center;font-family:'IBM Plex Sans',-apple-system,sans-serif;">
+  <section style="padding:18px;border-radius:6px;background-color:#fdfdf8;border:1px solid #bfc1b7;text-align:center;font-family:'IBM Plex Sans',-apple-system,sans-serif;">
     <p style="margin:0 0 12px;font-size:12px;color:#65675e;font-weight:700;letter-spacing:1px;"><span leaf="">{{图表标签}}</span></p>
-    <section style="min-height:140px;border-radius:6px;background:#eeefe9;display:flex;align-items:center;justify-content:center;border:1px dashed #bfc1b7;">
+    <section style="min-height:140px;border-radius:6px;background-color:#eeefe9;display:flex;align-items:center;justify-content:center;border:1px dashed #bfc1b7;">
       <span style="font-size:14px;color:#4d4f46;"><span leaf="">{{占位说明}}</span></span>
     </section>
   </section>
@@ -500,14 +500,14 @@
 
 ```html
 <section style="margin-top:24px;">
-  <section style="background:#eeefe9;padding:16px;border-radius:6px;border:1px solid #bfc1b7;font-family:'IBM Plex Sans',-apple-system,sans-serif;">
+  <section style="background-color:#eeefe9;padding:16px;border-radius:6px;border:1px solid #bfc1b7;font-family:'IBM Plex Sans',-apple-system,sans-serif;">
     <section style="display:flex;align-items:stretch;justify-content:center;gap:8px;">
-      <section style="flex:1;text-align:center;padding:10px 8px;background:#1e1f23;border-radius:6px;border:1px solid #23251d;">
+      <section style="flex:1;text-align:center;padding:10px 8px;background-color:#1e1f23;border-radius:6px;border:1px solid #23251d;">
         <p style="font-size:13px;font-weight:800;color:#fff;margin:0 0 3px;"><span leaf="">{{左侧标题}}</span></p>
         <p style="font-size:10px;color:rgba(255,255,255,0.75);margin:0;line-height:1.5;"><span leaf="">{{左侧说明}}</span></p>
       </section>
       <section style="display:flex;align-items:center;color:#bfc1b7;font-size:14px;padding:0 4px;"><span leaf="">vs</span></section>
-      <section style="flex:1;text-align:center;padding:10px 8px;background:#fdfdf8;border:1px solid #bfc1b7;border-radius:6px;">
+      <section style="flex:1;text-align:center;padding:10px 8px;background-color:#fdfdf8;border:1px solid #bfc1b7;border-radius:6px;">
         <p style="font-size:13px;font-weight:800;color:#23251d;margin:0 0 3px;"><span leaf="">{{右侧标题}}</span></p>
         <p style="font-size:10px;color:#65675e;margin:0;line-height:1.5;"><span leaf="">{{右侧说明}}</span></p>
       </section>
@@ -526,8 +526,8 @@
 
 ```html
 <section style="margin-top:24px;">
-  <section style="border-radius:6px;overflow:hidden;border:1px solid #bfc1b7;background:#fdfdf8;font-family:'IBM Plex Sans',-apple-system,sans-serif;">
-    <section style="display:flex;background:#eeefe9;border-bottom:1px solid #bfc1b7;">
+  <section style="border-radius:6px;overflow:hidden;border:1px solid #bfc1b7;background-color:#fdfdf8;font-family:'IBM Plex Sans',-apple-system,sans-serif;">
+    <section style="display:flex;background-color:#eeefe9;border-bottom:1px solid #bfc1b7;">
       <section style="width:35%;padding:10px 12px;font-size:12px;font-weight:800;color:#23251d;"><span leaf="">{{维度列名}}</span></section>
       <section style="width:32.5%;padding:10px 12px;font-size:12px;font-weight:800;color:#23251d;border-left:1px solid #bfc1b7;"><span leaf="">{{方案A名}}</span></section>
       <section style="width:32.5%;padding:10px 12px;font-size:12px;font-weight:800;color:#23251d;border-left:1px solid #bfc1b7;"><span leaf="">{{方案B名}}</span></section>
@@ -558,7 +558,7 @@
 
 ```html
 <section style="margin-top:24px;">
-  <section style="background:#eeefe9;border-radius:6px;padding:22px 18px;border:1px solid #bfc1b7;font-family:'IBM Plex Sans',-apple-system,sans-serif;">
+  <section style="background-color:#eeefe9;border-radius:6px;padding:22px 18px;border:1px solid #bfc1b7;font-family:'IBM Plex Sans',-apple-system,sans-serif;">
     <p style="font-size:10px;color:#65675e;margin:0 0 4px;text-transform:uppercase;letter-spacing:2px;font-weight:600;"><span leaf="">{{FLOW标签}}</span></p>
     <p style="font-size:13px;color:#23251d;font-weight:600;margin:0 0 8px;"><span leaf="">{{流程说明}}</span></p>
     <svg viewBox="0 0 400 82" style="width:100%;height:auto;" role="img" aria-label="流程示意">
@@ -601,8 +601,8 @@
   <section style="font-family:'IBM Plex Sans',-apple-system,sans-serif;">
     <section style="margin-bottom:14px;">
       <p style="margin:0 0 6px;">
-        <span style="display:inline-block;font-size:13px;font-weight:700;color:#23251d;background:#e5e7e0;padding:3px 10px;border-radius:999px;border:1px solid #bfc1b7;">
-          <span style="display:inline-block;width:6px;height:6px;background:#ed7b2f;border-radius:50%;margin-right:5px;vertical-align:middle;overflow:hidden;font-size:0;line-height:0;"><span leaf="">&nbsp;</span></span><span leaf="">&nbsp;{{条目标题}}&nbsp;</span>
+        <span style="display:inline-block;font-size:13px;font-weight:700;color:#23251d;background-color:#e5e7e0;padding:3px 10px;border-radius:999px;border:1px solid #bfc1b7;">
+          <span style="display:inline-block;width:6px;height:6px;background-color:#ed7b2f;border-radius:50%;margin-right:5px;vertical-align:middle;overflow:hidden;font-size:0;line-height:0;"><span leaf="">&nbsp;</span></span><span leaf="">&nbsp;{{条目标题}}&nbsp;</span>
         </span>
       </p>
       <p style="font-size:13px;color:#4d4f46;margin:0;line-height:1.7;text-align:justify;"><span leaf="">{{条目说明}}</span></p>
@@ -621,7 +621,7 @@
 
 ```html
 <section style="margin-top:24px;">
-  <section style="background:#fdfdf8;border:1px solid #bfc1b7;padding:18px;box-sizing:border-box;border-radius:6px;font-family:'IBM Plex Sans',-apple-system,sans-serif;">
+  <section style="background-color:#fdfdf8;border:1px solid #bfc1b7;padding:18px;box-sizing:border-box;border-radius:6px;font-family:'IBM Plex Sans',-apple-system,sans-serif;">
     <p style="margin:0 0 12px;font-size:10px;line-height:1.6;color:#9ea096;letter-spacing:3px;font-weight:800;"><span leaf="">{{FAQ标签}}</span></p>
     <section style="padding:10px 0;border-top:1px solid #bfc1b7;">
       <p style="margin:0;font-size:15px;line-height:1.8;color:#23251d;font-weight:800;"><span leaf="">01 / {{问题}}</span></p>
@@ -648,12 +648,12 @@
   <section style="font-family:'IBM Plex Sans',-apple-system,sans-serif;">
     <section style="display:flex;">
       <section style="display:flex;flex-direction:column;align-items:center;margin-right:16px;flex-shrink:0;">
-        <section style="width:14px;height:14px;border-radius:50%;border:3px solid #1e1f23;background:#fdfdf8;margin-top:4px;"><span leaf=""><br></span></section>
-        <section style="width:2px;background:#bfc1b7;flex:1;margin-top:4px;min-height:48px;"><span leaf=""><br></span></section>
+        <section style="width:14px;height:14px;border-radius:50%;border:3px solid #1e1f23;background-color:#fdfdf8;margin-top:4px;"><span leaf=""><br></span></section>
+        <section style="width:2px;background-color:#bfc1b7;flex:1;margin-top:4px;min-height:48px;"><span leaf=""><br></span></section>
       </section>
       <section style="flex:1;padding-bottom:12px;">
         <section style="display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap;">
-          <span style="display:inline-block;background:#1e1f23;color:#fff;font-size:10px;font-weight:700;padding:2px 8px;border-radius:999px;"><span leaf="">CASE</span></span>
+          <span style="display:inline-block;background-color:#1e1f23;color:#fff;font-size:10px;font-weight:700;padding:2px 8px;border-radius:999px;"><span leaf="">CASE</span></span>
           <h4 style="font-size:15px;font-weight:800;color:#23251d;margin:0;"><span leaf="">{{案例标题}}</span></h4>
         </section>
         <p style="font-size:11px;font-weight:600;color:#65675e;letter-spacing:1px;margin:0 0 12px;"><span leaf="">{{行业规模}}</span></p>
@@ -680,15 +680,15 @@
 
 ```html
 <section style="margin-top:24px;">
-  <section style="padding:18px;border-radius:6px;background:#fdfdf8;border:1px solid #bfc1b7;font-family:'IBM Plex Sans',-apple-system,sans-serif;">
+  <section style="padding:18px;border-radius:6px;background-color:#fdfdf8;border:1px solid #bfc1b7;font-family:'IBM Plex Sans',-apple-system,sans-serif;">
     <section style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px;">
       <p style="margin:0;font-size:12px;color:#65675e;font-weight:700;letter-spacing:1px;"><span leaf="">{{标签}}</span></p>
       <span style="font-size:11px;color:#9ea096;"><span leaf="">{{分组说明}}</span></span>
     </section>
     <section style="display:flex;flex-wrap:wrap;gap:10px;">
-      <section style="width:31%;height:46px;border-radius:6px;background:#eeefe9;border:1px solid #bfc1b7;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#9ea096;"><span leaf="">{{LOGO占位}}</span></section>
-      <section style="width:31%;height:46px;border-radius:6px;background:#eeefe9;border:1px solid #bfc1b7;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#9ea096;"><span leaf="">{{LOGO占位}}</span></section>
-      <section style="width:31%;height:46px;border-radius:6px;background:#eeefe9;border:1px solid #bfc1b7;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#9ea096;"><span leaf="">{{LOGO占位}}</span></section>
+      <section style="width:31%;height:46px;border-radius:6px;background-color:#eeefe9;border:1px solid #bfc1b7;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#9ea096;"><span leaf="">{{LOGO占位}}</span></section>
+      <section style="width:31%;height:46px;border-radius:6px;background-color:#eeefe9;border:1px solid #bfc1b7;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#9ea096;"><span leaf="">{{LOGO占位}}</span></section>
+      <section style="width:31%;height:46px;border-radius:6px;background-color:#eeefe9;border:1px solid #bfc1b7;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#9ea096;"><span leaf="">{{LOGO占位}}</span></section>
     </section>
   </section>
 </section>
@@ -706,23 +706,23 @@
 
 ```html
 <section style="margin-top:24px;">
-  <section style="background:#fdfdf8;border:1px solid #bfc1b7;border-radius:6px;padding:22px 16px;text-align:center;font-family:'IBM Plex Sans',-apple-system,sans-serif;">
+  <section style="background-color:#fdfdf8;border:1px solid #bfc1b7;border-radius:6px;padding:22px 16px;text-align:center;font-family:'IBM Plex Sans',-apple-system,sans-serif;">
     <p style="font-size:13px;font-weight:700;color:#23251d;line-height:1.6;margin:0 0 14px;"><span leaf="">{{文末互动引导}}</span></p>
     <section style="display:flex;justify-content:center;gap:18px;margin-bottom:14px;flex-wrap:wrap;">
       <section style="text-align:center;color:#4d4f46;">
-        <section style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;background:#eeefe9;border-radius:6px;border:1px solid #bfc1b7;">
+        <section style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;background-color:#eeefe9;border-radius:6px;border:1px solid #bfc1b7;">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
         </section>
         <span style="font-size:11px;font-weight:600;"><span leaf="">赞</span></span>
       </section>
       <section style="text-align:center;color:#4d4f46;">
-        <section style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;background:#eeefe9;border-radius:6px;border:1px solid #bfc1b7;">
+        <section style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;background-color:#eeefe9;border-radius:6px;border:1px solid #bfc1b7;">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path></svg>
         </section>
         <span style="font-size:11px;font-weight:600;"><span leaf="">在看</span></span>
       </section>
       <section style="text-align:center;color:#23251d;">
-        <section style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;background:#d4c9b8;border-radius:6px;border:1px solid #b17816;">
+        <section style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;background-color:#d4c9b8;border-radius:6px;border:1px solid #b17816;">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#23251d" stroke-width="1.8" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
         </section>
         <span style="font-size:11px;font-weight:700;"><span leaf="">收藏</span></span>
@@ -743,13 +743,13 @@
 
 ```html
 <section style="margin-top:24px;">
-  <section style="padding:18px;border-radius:6px;background:#fdfdf8;border:1px solid #bfc1b7;font-family:'IBM Plex Sans',-apple-system,sans-serif;">
+  <section style="padding:18px;border-radius:6px;background-color:#fdfdf8;border:1px solid #bfc1b7;font-family:'IBM Plex Sans',-apple-system,sans-serif;">
     <p style="margin:0 0 12px;font-size:11px;font-weight:800;letter-spacing:2px;color:#65675e;"><span leaf="">{{标签}}</span></p>
     <section style="display:flex;flex-wrap:wrap;gap:8px;">
-      <span style="display:inline-block;padding:6px 10px;border-radius:999px;background:#e5e7e0;border:1px solid #bfc1b7;font-size:12px;font-weight:700;color:#23251d;"><span leaf="">{{阶段名·默认}}</span></span>
-      <span style="display:inline-block;padding:6px 10px;border-radius:999px;background:#eeefe9;border:1px solid #bfc1b7;font-size:12px;font-weight:700;color:#23251d;"><span leaf="">{{阶段名·默认}}</span></span>
-      <span style="display:inline-block;padding:6px 10px;border-radius:999px;background:#d4c9b8;border:1px solid #b17816;font-size:12px;font-weight:700;color:#23251d;"><span leaf="">{{阶段名·进行中}}</span></span>
-      <span style="display:inline-block;padding:6px 10px;border-radius:999px;background:#1e1f23;border:1px solid #23251d;font-size:12px;font-weight:700;color:#ffffff;"><span leaf="">{{阶段名·终态}}</span></span>
+      <span style="display:inline-block;padding:6px 10px;border-radius:999px;background-color:#e5e7e0;border:1px solid #bfc1b7;font-size:12px;font-weight:700;color:#23251d;"><span leaf="">{{阶段名·默认}}</span></span>
+      <span style="display:inline-block;padding:6px 10px;border-radius:999px;background-color:#eeefe9;border:1px solid #bfc1b7;font-size:12px;font-weight:700;color:#23251d;"><span leaf="">{{阶段名·默认}}</span></span>
+      <span style="display:inline-block;padding:6px 10px;border-radius:999px;background-color:#d4c9b8;border:1px solid #b17816;font-size:12px;font-weight:700;color:#23251d;"><span leaf="">{{阶段名·进行中}}</span></span>
+      <span style="display:inline-block;padding:6px 10px;border-radius:999px;background-color:#1e1f23;border:1px solid #23251d;font-size:12px;font-weight:700;color:#ffffff;"><span leaf="">{{阶段名·终态}}</span></span>
     </section>
   </section>
 </section>
@@ -765,13 +765,13 @@
 
 ```html
 <section style="margin-top:24px;">
-  <section style="border-radius:6px;overflow:hidden;border:1px solid #23251d;background:#1e1f23;font-family:'IBM Plex Sans',-apple-system,sans-serif;display:flex;align-items:stretch;">
+  <section style="border-radius:6px;overflow:hidden;border:1px solid #23251d;background-color:#1e1f23;font-family:'IBM Plex Sans',-apple-system,sans-serif;display:flex;align-items:stretch;">
     <section style="flex:1;padding:18px 18px 20px;border-right:1px solid rgba(255,255,255,0.08);">
       <p style="margin:0 0 8px;font-size:11px;letter-spacing:2px;color:rgba(255,255,255,0.55);font-weight:700;"><span leaf="">{{SUMMARY标签}}</span></p>
       <p style="margin:0;font-size:15px;line-height:1.9;color:rgba(255,255,255,0.92);"><span leaf="">{{左侧结论}}</span></p>
     </section>
-    <section style="width:34%;min-width:120px;padding:18px;background:#23251d;display:flex;flex-direction:column;justify-content:center;gap:10px;">
-      <span style="display:inline-block;padding:4px 8px;background:#eeefe9;color:#23251d;border-radius:4px;font-size:10px;font-weight:800;align-self:flex-start;"><span leaf="">{{NEXT标签}}</span></span>
+    <section style="width:34%;min-width:120px;padding:18px;background-color:#23251d;display:flex;flex-direction:column;justify-content:center;gap:10px;">
+      <span style="display:inline-block;padding:4px 8px;background-color:#eeefe9;color:#23251d;border-radius:4px;font-size:10px;font-weight:800;align-self:flex-start;"><span leaf="">{{NEXT标签}}</span></span>
       <p style="margin:0;font-size:13px;line-height:1.8;color:rgba(255,255,255,0.76);"><span leaf="">{{右侧说明}}</span></p>
     </section>
   </section>
@@ -788,7 +788,7 @@
 
 ```html
 <section style="margin-top:24px;">
-  <section style="background:#1e1f23;border:1px solid #23251d;padding:8px;box-sizing:border-box;border-radius:6px;font-family:'IBM Plex Sans',-apple-system,sans-serif;">
+  <section style="background-color:#1e1f23;border:1px solid #23251d;padding:8px;box-sizing:border-box;border-radius:6px;font-family:'IBM Plex Sans',-apple-system,sans-serif;">
     <section style="border:1px solid rgba(255,255,255,0.16);border-radius:4px;padding:20px 22px;">
       <p style="margin:0 0 8px;font-size:10px;line-height:1.6;color:#a3a3a3;letter-spacing:4px;font-weight:800;"><span leaf="">{{CLOSING标签}}</span></p>
       <p style="margin:0;font-size:16px;line-height:1.9;color:#fafafa;font-weight:700;"><span leaf="">{{结尾金句}}</span></p>
@@ -809,7 +809,7 @@
 
 ```html
 <section style="margin-top:24px;">
-  <section style="background:#eeefe9;border:1px solid #bfc1b7;border-radius:6px;overflow:hidden;font-family:'IBM Plex Sans',-apple-system,sans-serif;">
+  <section style="background-color:#eeefe9;border:1px solid #bfc1b7;border-radius:6px;overflow:hidden;font-family:'IBM Plex Sans',-apple-system,sans-serif;">
     <section style="padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;">
       <p style="margin:0;font-size:13px;line-height:1.7;color:#23251d;font-weight:700;"><span leaf="">{{摘要文字}}</span></p>
       <span style="font-size:10px;color:#65675e;font-weight:800;letter-spacing:2px;"><span leaf="">{{标签}}</span></span>
@@ -829,8 +829,8 @@
 ```html
 <section style="margin-top:24px;">
   <section style="font-family:'IBM Plex Sans',-apple-system,sans-serif;">
-    <span style="display:inline-flex;align-items:center;gap:10px;padding:8px 12px;background:#eeefe9;border:1px solid #bfc1b7;border-radius:999px;">
-      <span style="width:22px;height:22px;border-radius:50%;background:#1e1f23;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:800;"><span leaf="">{{头像字}}</span></span>
+    <span style="display:inline-flex;align-items:center;gap:10px;padding:8px 12px;background-color:#eeefe9;border:1px solid #bfc1b7;border-radius:999px;">
+      <span style="width:22px;height:22px;border-radius:50%;background-color:#1e1f23;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:800;"><span leaf="">{{头像字}}</span></span>
       <span style="font-size:12px;color:#23251d;font-weight:700;"><span leaf="">{{签名文字}}</span></span>
     </span>
   </section>
@@ -853,7 +853,7 @@
         <p style="margin:0;font-size:24px;font-weight:800;color:#23251d;line-height:1;letter-spacing:-2px;"><span leaf="">///</span></p>
         <p style="margin:0;font-size:8px;font-weight:700;color:#9ea096;letter-spacing:2px;"><span leaf="">END</span></p>
       </section>
-      <span style="width:1px;height:36px;background:#bfc1b7;flex-shrink:0;display:inline-block;overflow:hidden;vertical-align:middle;font-size:0;line-height:0;"><span leaf="">&nbsp;</span></span>
+      <span style="width:1px;height:36px;background-color:#bfc1b7;flex-shrink:0;display:inline-block;overflow:hidden;vertical-align:middle;font-size:0;line-height:0;"><span leaf="">&nbsp;</span></span>
       <section>
         <p style="margin:0 0 1px;font-size:17px;font-weight:800;color:#23251d;letter-spacing:0.2px;"><span leaf="">{{结尾标题}}</span></p>
         <p style="margin:0;font-size:11px;font-weight:600;color:#65675e;letter-spacing:1.2px;"><span leaf="">{{结尾说明}}</span></p>
@@ -861,7 +861,7 @@
     </section>
     <p style="margin:0 0 14px;font-size:14px;line-height:1.9;text-align:justify;color:#4d4f46;"><span leaf="">{{收尾段落1}}</span></p>
     <p style="margin:0 0 14px;font-size:14px;line-height:1.9;text-align:justify;color:#4d4f46;"><span leaf="">{{收尾段落2}}</span></p>
-    <section style="background:#eeefe9;border-radius:6px;padding:16px 18px;border:1px solid #bfc1b7;text-align:center;">
+    <section style="background-color:#eeefe9;border-radius:6px;padding:16px 18px;border:1px solid #bfc1b7;text-align:center;">
       <p style="font-size:15px;color:#23251d;margin:0;line-height:1.6;"><strong style="border-bottom:3px solid #ed7b2f;"><span leaf="">{{最后总结}}</span></strong></p>
     </section>
   </section>
@@ -879,7 +879,7 @@
 ## 完整文章模板骨架
 
 ```html
-<section style="max-width:677px;margin:0 auto;padding:8px;box-sizing:border-box;background:#fdfdf8;color:#4d4f46;font-family:'IBM Plex Sans',-apple-system,system-ui,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;line-height:1.75;">
+<section style="max-width:677px;margin:0 auto;padding:8px;box-sizing:border-box;background-color:#fdfdf8;color:#4d4f46;font-family:'IBM Plex Sans',-apple-system,system-ui,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;line-height:1.75;">
 
   <!-- 1. 头图卡（组件2 hero-card，唯一一处，不设 margin-top） -->
 

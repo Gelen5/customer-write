@@ -46,7 +46,7 @@
 ## 组件 1 全局容器
 
 ```html
-<section style="max-width:677px;margin:0 auto;background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#374151;line-height:1.75;letter-spacing:0.5px;">
+<section style="max-width:677px;margin:0 auto;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#374151;line-height:1.75;letter-spacing:0.5px;">
 
   <!-- 所有组件放在这里 -->
 
@@ -71,8 +71,8 @@
 - `{{等级}}` → 如 `S`
 
 ```html
-<section style="background:#fffef8;border:2px solid #1a1a1a;box-shadow:4px 4px 0 #1a1a1a;margin-bottom:32px;">
-  <section style="background:#059669;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;">
+<section style="background-color:#fffef8;border:2px solid #1a1a1a;box-shadow:4px 4px 0 #1a1a1a;margin-bottom:32px;">
+  <section style="background-color:#059669;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;">
     <section style="color:#fffef8;font-size:11px;letter-spacing:4px;font-weight:600;"><span leaf="">{{头部标签}}</span></section>
     <section style="color:#fffef8;font-size:11px;letter-spacing:2px;"><span leaf="">★★★★★</span></section>
   </section>
@@ -89,7 +89,7 @@
           <section style="font-size:12px;color:#888;"><span leaf="">{{作者身份}}</span></section>
         </section>
       </section>
-      <section style="font-size:13px;color:#555;line-height:1.8;padding:12px;background:#F0FDF4;border:1px solid #A7F3D0;">
+      <section style="font-size:13px;color:#555;line-height:1.8;padding:12px;background-color:#F0FDF4;border:1px solid #A7F3D0;">
         <span leaf="">{{简介段落}}</span>
       </section>
       <section style="display:flex;gap:8px;margin-top:16px;">
@@ -98,7 +98,7 @@
         <section style="font-size:10px;color:#059669;border:1px solid #059669;padding:4px 10px;"><span leaf="">{{#标签3}}</span></section>
       </section>
     </section>
-    <section style="width:48px;padding:14px 4px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;background:#F0FDF4;">
+    <section style="width:48px;padding:14px 4px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;background-color:#F0FDF4;">
       <section style="text-align:center;">
         <section style="font-size:7px;color:#999;letter-spacing:1px;"><span leaf="">NO.</span></section>
         <section style="font-size:18px;font-weight:900;color:#059669;"><span leaf="">{{编号}}</span></section>
@@ -133,7 +133,7 @@
 ```html
 <section style="margin-bottom:32px;padding:0 20px;">
   <section style="display:flex;align-items:center;gap:12px;margin-bottom:24px;padding-bottom:12px;border-bottom:2px solid #1a1a1a;">
-    <section style="background:#059669;color:#fff;font-size:12px;font-weight:800;padding:6px 12px;letter-spacing:2px;"><span leaf="">{{编号}}</span></section>
+    <section style="background-color:#059669;color:#fff;font-size:12px;font-weight:800;padding:6px 12px;letter-spacing:2px;"><span leaf="">{{编号}}</span></section>
     <section style="font-size:18px;font-weight:800;color:#1a1a1a;letter-spacing:1px;"><span leaf="">{{标题}}</span></section>
     <section style="font-size:12px;color:#888;"><span leaf="">/ {{副标题}}</span></section>
   </section>
@@ -154,7 +154,7 @@
 ```html
 <section style="margin-bottom:32px;padding:0 20px;">
   <section style="display:flex;align-items:center;gap:8px;margin-bottom:16px;">
-    <section style="width:4px;height:16px;background:#059669;"><span leaf=""><br></span></section>
+    <section style="width:4px;height:16px;background-color:#059669;"><span leaf=""><br></span></section>
     <section style="font-size:15px;font-weight:700;color:#1a1a1a;"><span leaf="">{{小节标题}}</span></section>
   </section>
 </section>
@@ -191,7 +191,7 @@
 ### 6b. 绿色高亮 —— 核心观点/关键数据
 
 ```html
-<span style="background:linear-gradient(120deg,#A7F3D0 0%,rgba(167,243,208,0) 100%);padding:0 4px;font-weight:600;color:#111;"><span leaf="">{{文字}}</span></span>
+<span style="background-color:#D3F8E7;padding:0 4px;font-weight:600;color:#111;"><span leaf="">{{文字}}</span></span>
 ```
 
 ### 6c. 绿色下划线 —— 重要短语（正文关键词的默认标记）
@@ -203,7 +203,7 @@
 ### 6d. 代码标签 —— 技术名词/模型名/命令
 
 ```html
-<span style="background:#F3F4F6;color:#1F2937;padding:2px 6px;border-radius:4px;font-size:13px;font-weight:600;"><span leaf="">{{文字}}</span></span>
+<span style="background-color:#F3F4F6;color:#1F2937;padding:2px 6px;border-radius:4px;font-size:13px;font-weight:600;"><span leaf="">{{文字}}</span></span>
 ```
 
 ### 6e. 品牌紫色 —— Claude / Obsidian / Gemini 等 AI 品牌名专用
@@ -238,7 +238,7 @@
 
 ```html
 <section style="margin-bottom:32px;padding:0 20px;">
-  <section style="background:#fffef8;border:1px solid #eee;padding:6px;margin-bottom:0;">
+  <section style="background-color:#fffef8;border:1px solid #eee;padding:6px;margin-bottom:0;">
     <figure style="margin:0;">
       <span leaf=""><img src="{{图片URL}}" style="max-width:100%;height:auto;display:block;margin:0 auto;"></span>
     </figure>
@@ -256,7 +256,7 @@
 
 ```html
 <section style="margin-bottom:32px;padding:0 20px;">
-  <section style="background:#F0FDF4;border-left:4px solid #059669;padding:14px 16px;margin-bottom:0;">
+  <section style="background-color:#F0FDF4;border-left:4px solid #059669;padding:14px 16px;margin-bottom:0;">
     <p style="font-size:14px;color:#1a1a1a;font-weight:600;line-height:1.7;margin:0;">
       <span leaf="">{{前缀}}</span>
       <span style="color:#059669;"><span leaf="">{{结论内容}}</span></span>
@@ -275,9 +275,9 @@
 
 ```html
 <section style="margin-bottom:32px;padding:0 20px;">
-  <section style="background:#fffef8;border:1px solid #eee;margin-bottom:12px;">
+  <section style="background-color:#fffef8;border:1px solid #eee;margin-bottom:12px;">
     <section style="display:flex;align-items:stretch;">
-      <section style="width:36px;background:#059669;display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px;font-weight:800;"><span leaf="">{{序号}}</span></section>
+      <section style="width:36px;background-color:#059669;display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px;font-weight:800;"><span leaf="">{{序号}}</span></section>
       <section style="flex:1;padding:12px 16px;font-size:13px;color:#555;line-height:1.7;border-left:1px dashed #A7F3D0;">
         <span style="font-weight:600;color:#1a1a1a;"><span leaf="">{{小标题}}</span></span>
         <span leaf="">：{{描述}}</span>
@@ -299,7 +299,7 @@
 
 ```html
 <section style="margin-bottom:32px;padding:0 20px;">
-  <section style="background:#fffef8;border:2px solid #1a1a1a;box-shadow:3px 3px 0 #1a1a1a;padding:20px;margin-bottom:0;">
+  <section style="background-color:#fffef8;border:2px solid #1a1a1a;box-shadow:3px 3px 0 #1a1a1a;padding:20px;margin-bottom:0;">
     <p style="font-size:15px;color:#1a1a1a;font-weight:700;line-height:1.8;margin:0 0 12px;text-align:center;">
       <span leaf="">{{金句前半}}</span>
       <span style="color:#059669;font-size:24px;"><span leaf="">{{大数字}}</span></span>
@@ -344,25 +344,25 @@
 
 ```html
 <section style="padding:0 0 32px;">
-  <section style="background:#fffef8;border:2px solid #1a1a1a;box-shadow:4px 4px 0 #1a1a1a;padding:24px 20px;text-align:center;">
+  <section style="background-color:#fffef8;border:2px solid #1a1a1a;box-shadow:4px 4px 0 #1a1a1a;padding:24px 20px;text-align:center;">
     <p style="font-size:13px;font-weight:700;color:#1a1a1a;margin:0 0 20px;line-height:1.6;">
       <span leaf="">{{互动文案}}</span>
     </p>
     <section style="display:flex;justify-content:center;gap:24px;margin-bottom:16px;">
       <section style="text-align:center;color:#555;">
-        <section style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;background:#fff;border:1px solid #1a1a1a;">
+        <section style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;background-color:#fff;border:1px solid #1a1a1a;">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
         </section>
         <span style="font-size:10px;font-weight:600;"><span leaf="">点赞</span></span>
       </section>
       <section style="text-align:center;color:#555;">
-        <section style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;background:#fff;border:1px solid #1a1a1a;">
+        <section style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;background-color:#fff;border:1px solid #1a1a1a;">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"></circle><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path></svg>
         </section>
         <span style="font-size:10px;font-weight:600;"><span leaf="">在看</span></span>
       </section>
       <section style="text-align:center;color:#059669;">
-        <section style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;background:#F0FDF4;border:2px solid #059669;">
+        <section style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;background-color:#F0FDF4;border:2px solid #059669;">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
         </section>
         <span style="font-size:10px;font-weight:600;"><span leaf="">星标</span></span>
@@ -412,7 +412,7 @@
 ## 完整文章模板骨架
 
 ```html
-<section style="max-width:677px;margin:0 auto;background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#374151;line-height:1.75;letter-spacing:0.5px;">
+<section style="max-width:677px;margin:0 auto;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#374151;line-height:1.75;letter-spacing:0.5px;">
 
   <!-- 1. 票据封面（组件2 ticket-cover） -->
 

@@ -15,6 +15,9 @@
 | 摸鱼票据风 | `#059669` emerald | 测评、工具对比、创意评测（票据/门票视觉隐喻，星级评分+编号+硬阴影卡片） | `references/themes/theme-moyu-ticket.md` | `border-bottom:2px solid #A7F3D0;font-weight:600;` |
 | 橄榄手记 | `#1e1f23` 墨黑（配橙 `#ed7b2f`） | 内刊手记、深度评测、案例复盘、系统性说明文档（编辑部内刊质感，分节形式多样，信息密度偏高） | `references/themes/theme-olive-journal.md` | `border-bottom:2px solid #ed7b2f;font-weight:600;` |
 | 天蓝学堂·清新教招 | `#1E9EF0` 天蓝 | 教师/事业单位/医护编/人才引进公开招聘报名（招聘标头+岗位一览卡+报名分步+下载引导） | `references/themes/theme-sky-xuetang.md` | `border-bottom:2px solid #BFE0F8;font-weight:600;` |
+| 墨蓝批注·荧光笔记 | `#2F5A8F` 墨蓝（荧光黄 `#F5C518` 点睛） | 备考经验帖、学习方法拆解、干货笔记（笔记批注感：荧光笔划重点+批注卡+坑点细左条，白底为主几乎无色块） | `references/themes/theme-ink-note.md` | `border-bottom:2px solid #F5C518;font-weight:600;` |
+| 琥珀速读·干货卡 | `#B45309` 琥珀棕（暖米 `#FDF6EC` 衬） | 考试干货清单、避坑指南、方法速览（结论前置+要点拆条+速记卡，扫读吸收最快） | `references/themes/theme-amber-skim.md` | `border-bottom:2px solid #F3D5A3;font-weight:600;` |
+| 黛青复盘·时间轴 | `#2E6E65` 黛青（青灰白 `#F1F6F4` 衬） | 备考全过程复盘、上岸经验叙事、阶段规划（阶段时间轴+成绩对比卡+复盘小结，叙事推进感强） | `references/themes/theme-timeline-review.md` | `border-bottom:2px solid #A9D3CA;font-weight:600;` |
 | 珊瑚招贴·火热招生 | `#E6392F` 珊瑚橙红（明黄 `#FFB300`） | 开班招生、报名启动、线下宣讲、名额热度（促销角标+班型卡+报名CTA大按钮） | `references/themes/theme-banner-coral.md` | `border-bottom:2px solid #F5A79B;font-weight:700;` |
 | 考务蓝·严谨考务 | `#2456D8` 钴蓝（天蓝 `#3E8EF7`） | 笔试/面试通知、考试大纲科目、考务流程、分数线（考务标头+日程时间轴+科目卡） | `references/themes/theme-azure-kaowu.md` | `border-bottom:2px solid #B8CCF7;font-weight:600;` |
 

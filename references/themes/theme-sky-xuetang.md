@@ -41,7 +41,7 @@
 ## 组件 1 全局容器
 
 ```html
-<section style="max-width:677px;margin:0 auto;background:#FFFFFF;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#33485E;line-height:1.85;letter-spacing:0.3px;overflow-x:hidden;">
+<section style="max-width:677px;margin:0 auto;background-color:#FFFFFF;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#33485E;line-height:1.85;letter-spacing:0.3px;overflow-x:hidden;">
 
   <!-- 所有组件放在这里 -->
 
@@ -56,10 +56,10 @@
 
 ```html
 <section style="margin:6px 0 24px;">
-  <section style="background:linear-gradient(135deg,#1E9EF0,#4DB8F7);padding:20px 18px;text-align:center;border-radius:8px;">
+  <section style="background-color:#1E9EF0;padding:20px 18px;text-align:center;border-radius:8px;">
     <section style="display:flex;justify-content:center;margin-bottom:10px;">
-      <span style="display:inline-block;background:#FFFFFF;color:#0D86D6;font-size:12px;font-weight:800;padding:3px 12px;border-radius:20px;margin:0 4px;"><span leaf="">{{招聘单位}}</span></span>
-      <span style="display:inline-block;background:rgba(255,255,255,0.22);color:#FFFFFF;font-size:12px;font-weight:700;padding:3px 12px;border-radius:20px;margin:0 4px;"><span leaf="">招聘 {{人数}} 人</span></span>
+      <span style="display:inline-block;background-color:#FFFFFF;color:#0D86D6;font-size:12px;font-weight:800;padding:3px 12px;border-radius:20px;margin:0 4px;"><span leaf="">{{招聘单位}}</span></span>
+      <span style="display:inline-block;background-color:rgba(255,255,255,0.22);color:#FFFFFF;font-size:12px;font-weight:700;padding:3px 12px;border-radius:20px;margin:0 4px;"><span leaf="">招聘 {{人数}} 人</span></span>
     </section>
     <p style="font-size:22px;color:#FFFFFF;font-weight:900;margin:0;line-height:1.5;letter-spacing:1px;">
       <span leaf="">{{公告主标题}}</span>
@@ -80,7 +80,7 @@
 ```html
 <section style="margin-top:40px;margin-bottom:18px;">
   <section style="display:flex;align-items:center;border-bottom:1px solid #D9ECFB;padding-bottom:12px;">
-    <span style="display:inline-block;background:#1E9EF0;color:#FFFFFF;font-size:16px;font-weight:800;padding:3px 12px;border-radius:4px;margin-right:12px;line-height:1.4;"><span leaf="">{{一}}</span></span>
+    <span style="display:inline-block;background-color:#1E9EF0;color:#FFFFFF;font-size:16px;font-weight:800;padding:3px 12px;border-radius:4px;margin-right:12px;line-height:1.4;"><span leaf="">{{一}}</span></span>
     <h3 style="font-size:18px;font-weight:800;color:#152E45;margin:0;letter-spacing:0.5px;">
       <span leaf="">{{章节标题}}</span>
     </h3>
@@ -116,7 +116,7 @@
 
 ### 5b. 浅蓝底深蓝字标签（核心概念 / 专业名）
 ```html
-<span style="background:#E1F2FE;color:#0D7AC0;padding:2px 7px;border-radius:3px;font-weight:700;"><span leaf="">幼儿教育 · 专技岗</span></span>
+<span style="background-color:#E1F2FE;color:#0D7AC0;padding:2px 7px;border-radius:3px;font-weight:700;"><span leaf="">幼儿教育 · 专技岗</span></span>
 ```
 
 ### 5c. 蓝下划线（正文默认标记）
@@ -126,7 +126,7 @@
 
 ### 5d. 行内代码 / 邮箱 / 关键词（灰底等宽）
 ```html
-<span style="background:#F0F4F8;color:#152E45;padding:2px 6px;border-radius:3px;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:14px;"><span leaf="">code</span></span>
+<span style="background-color:#F0F4F8;color:#152E45;padding:2px 6px;border-radius:3px;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:14px;"><span leaf="">code</span></span>
 ```
 
 ### 5e. 名额锚点（招录人数，全篇 ≤3 处）
@@ -139,7 +139,7 @@
 ## 组件 6 关键时间提醒条（报名 / 截止）
 
 ```html
-<section style="border-left:4px solid #1E9EF0;padding:14px 0 14px 20px;margin-bottom:22px;background:#F0F9FF;">
+<section style="border-left:4px solid #1E9EF0;padding:14px 0 14px 20px;margin-bottom:22px;background-color:#F0F9FF;">
   <p style="font-size:14px;font-weight:700;color:#0D7AC0;margin:0;line-height:1.8;">
     <span leaf="">{{节点}}：{{报名起止 / 截止时间}}</span>
   </p>
@@ -154,10 +154,10 @@
 
 ```html
 <section style="margin-bottom:22px;">
-  <section style="background:#F0F9FF;border:1px solid #D9ECFB;border-radius:8px;padding:16px 14px;margin-bottom:10px;">
+  <section style="background-color:#F0F9FF;border:1px solid #D9ECFB;border-radius:8px;padding:16px 14px;margin-bottom:10px;">
     <section style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">
       <p style="font-size:16px;font-weight:800;color:#152E45;margin:0;"><span leaf="">{{岗位名称}}</span></p>
-      <span style="background:#1E9EF0;color:#fff;font-size:12px;font-weight:700;padding:2px 10px;border-radius:20px;"><span leaf="">招 {{N}} 人</span></span>
+      <span style="background-color:#1E9EF0;color:#fff;font-size:12px;font-weight:700;padding:2px 10px;border-radius:20px;"><span leaf="">招 {{N}} 人</span></span>
     </section>
     <p style="font-size:13px;color:#5B7085;margin:0;line-height:1.8;">
       <span leaf="">专业：</span><strong style="color:#0D7AC0;"><span leaf="">{{专业要求}}</span></strong>
@@ -165,10 +165,10 @@
     </p>
   </section>
 
-  <section style="background:#F0F9FF;border:1px solid #D9ECFB;border-radius:8px;padding:16px 14px;">
+  <section style="background-color:#F0F9FF;border:1px solid #D9ECFB;border-radius:8px;padding:16px 14px;">
     <section style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">
       <p style="font-size:16px;font-weight:800;color:#152E45;margin:0;"><span leaf="">{{岗位名称}}</span></p>
-      <span style="background:#1E9EF0;color:#fff;font-size:12px;font-weight:700;padding:2px 10px;border-radius:20px;"><span leaf="">招 {{N}} 人</span></span>
+      <span style="background-color:#1E9EF0;color:#fff;font-size:12px;font-weight:700;padding:2px 10px;border-radius:20px;"><span leaf="">招 {{N}} 人</span></span>
     </section>
     <p style="font-size:13px;color:#5B7085;margin:0;line-height:1.8;">
       <span leaf="">专业：</span><strong style="color:#0D7AC0;"><span leaf="">{{专业要求}}</span></strong>
@@ -185,11 +185,11 @@
 ```html
 <section style="margin-bottom:22px;">
   <section style="display:flex;align-items:flex-start;margin-bottom:12px;">
-    <span style="display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;background:#1E9EF0;color:#fff;font-size:13px;font-weight:700;border-radius:4px;flex-shrink:0;margin-top:2px;margin-right:12px;"><span leaf="">1</span></span>
+    <span style="display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;background-color:#1E9EF0;color:#fff;font-size:13px;font-weight:700;border-radius:4px;flex-shrink:0;margin-top:2px;margin-right:12px;"><span leaf="">1</span></span>
     <p style="font-size:15px;color:#33485E;margin:0;line-height:1.8;flex:1;"><span leaf="">{{条件}}</span></p>
   </section>
   <section style="display:flex;align-items:flex-start;margin-bottom:12px;">
-    <span style="display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;background:#1E9EF0;color:#fff;font-size:13px;font-weight:700;border-radius:4px;flex-shrink:0;margin-top:2px;margin-right:12px;"><span leaf="">2</span></span>
+    <span style="display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;background-color:#1E9EF0;color:#fff;font-size:13px;font-weight:700;border-radius:4px;flex-shrink:0;margin-top:2px;margin-right:12px;"><span leaf="">2</span></span>
     <p style="font-size:15px;color:#33485E;margin:0;line-height:1.8;flex:1;"><span leaf="">{{条件}}</span></p>
   </section>
 </section>
@@ -202,14 +202,14 @@
 ```html
 <section style="margin-bottom:22px;">
   <section style="display:flex;align-items:flex-start;margin-bottom:14px;">
-    <span style="display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;background:#1E9EF0;color:#fff;font-size:14px;font-weight:800;border-radius:50%;flex-shrink:0;margin-right:12px;"><span leaf="">1</span></span>
+    <span style="display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;background-color:#1E9EF0;color:#fff;font-size:14px;font-weight:800;border-radius:50%;flex-shrink:0;margin-right:12px;"><span leaf="">1</span></span>
     <section style="flex:1;">
       <p style="font-size:15px;font-weight:700;color:#152E45;margin:0 0 4px;"><span leaf="">{{步骤名}}</span></p>
       <p style="font-size:14px;color:#5B7085;margin:0;line-height:1.8;"><span leaf="">{{说明，含网址/邮箱用 5d 灰底等宽标出}}</span></p>
     </section>
   </section>
   <section style="display:flex;align-items:flex-start;margin-bottom:14px;">
-    <span style="display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;background:#1E9EF0;color:#fff;font-size:14px;font-weight:800;border-radius:50%;flex-shrink:0;margin-right:12px;"><span leaf="">2</span></span>
+    <span style="display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;background-color:#1E9EF0;color:#fff;font-size:14px;font-weight:800;border-radius:50%;flex-shrink:0;margin-right:12px;"><span leaf="">2</span></span>
     <section style="flex:1;">
       <p style="font-size:15px;font-weight:700;color:#152E45;margin:0 0 4px;"><span leaf="">{{步骤名}}</span></p>
       <p style="font-size:14px;color:#5B7085;margin:0;line-height:1.8;"><span leaf="">{{说明}}</span></p>
@@ -224,15 +224,15 @@
 
 ```html
 <section style="display:flex;margin-bottom:22px;">
-  <section style="flex:1;background:#F0F9FF;border:1px solid #D9ECFB;border-radius:8px;padding:14px 10px;margin-right:6px;text-align:center;">
+  <section style="flex:1;background-color:#F0F9FF;border:1px solid #D9ECFB;border-radius:8px;padding:14px 10px;margin-right:6px;text-align:center;">
     <p style="font-size:11px;color:#7A90A5;margin:0 0 4px;"><span leaf="">{{环节}}</span></p>
     <p style="font-size:14px;font-weight:800;color:#152E45;margin:0;"><span leaf="">{{时间}}</span></p>
   </section>
-  <section style="flex:1;background:#F0F9FF;border:1px solid #D9ECFB;border-radius:8px;padding:14px 10px;margin-right:6px;text-align:center;">
+  <section style="flex:1;background-color:#F0F9FF;border:1px solid #D9ECFB;border-radius:8px;padding:14px 10px;margin-right:6px;text-align:center;">
     <p style="font-size:11px;color:#7A90A5;margin:0 0 4px;"><span leaf="">{{环节}}</span></p>
     <p style="font-size:14px;font-weight:800;color:#152E45;margin:0;"><span leaf="">{{时间}}</span></p>
   </section>
-  <section style="flex:1;background:#F0F9FF;border:1px solid #D9ECFB;border-radius:8px;padding:14px 10px;text-align:center;">
+  <section style="flex:1;background-color:#F0F9FF;border:1px solid #D9ECFB;border-radius:8px;padding:14px 10px;text-align:center;">
     <p style="font-size:11px;color:#7A90A5;margin:0 0 4px;"><span leaf="">{{环节}}</span></p>
     <p style="font-size:14px;font-weight:800;color:#152E45;margin:0;"><span leaf="">{{时间}}</span></p>
   </section>
@@ -246,12 +246,12 @@
 > 招聘公告末尾常见"见附件岗位表"。用浅蓝引导条突出下载 / 查看入口。
 
 ```html
-<section style="border:1px solid #D9ECFB;background:#F0F9FF;border-radius:8px;padding:16px;margin-bottom:22px;text-align:center;">
+<section style="border:1px solid #D9ECFB;background-color:#F0F9FF;border-radius:8px;padding:16px;margin-bottom:22px;text-align:center;">
   <p style="font-size:15px;font-weight:800;color:#0D7AC0;margin:0 0 6px;">
     <span leaf="">{{岗位表 / 报名表下载入口}}</span>
   </p>
   <p style="font-size:13px;color:#7A90A5;margin:0;">
-    <span leaf="">后台回复 <span style="background:#1E9EF0;color:#fff;padding:2px 8px;border-radius:3px;font-weight:800;"><span leaf="">【{{数字}}】</span></span> 获取岗位一览表附件</span>
+    <span leaf="">后台回复 <span style="background-color:#1E9EF0;color:#fff;padding:2px 8px;border-radius:3px;font-weight:800;"><span leaf="">【{{数字}}】</span></span> 获取岗位一览表附件</span>
   </p>
 </section>
 ```
@@ -263,9 +263,9 @@
 ```html
 <section style="margin-top:8px;">
   <section style="display:flex;align-items:center;justify-content:center;margin-bottom:24px;">
-    <span style="height:1px;width:46px;background:#BFE0F8;margin-right:12px;"><span leaf=""><br></span></span>
+    <span style="height:1px;width:46px;background-color:#BFE0F8;margin-right:12px;"><span leaf=""><br></span></span>
     <span style="font-size:11px;color:#1E9EF0;letter-spacing:3px;font-weight:800;"><span leaf="">END · 编制上岸</span></span>
-    <span style="height:1px;width:46px;background:#BFE0F8;margin-left:12px;"><span leaf=""><br></span></span>
+    <span style="height:1px;width:46px;background-color:#BFE0F8;margin-left:12px;"><span leaf=""><br></span></span>
   </section>
 </section>
 ```
@@ -275,7 +275,7 @@
 ## 完整文章模板骨架
 
 ```html
-<section style="max-width:677px;margin:0 auto;background:#FFFFFF;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#33485E;line-height:1.85;letter-spacing:0.3px;overflow-x:hidden;">
+<section style="max-width:677px;margin:0 auto;background-color:#FFFFFF;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#33485E;line-height:1.85;letter-spacing:0.3px;overflow-x:hidden;">
 
   <!-- 1. 招聘标头（组件2，含单位/人数/报名截止，最前） -->
   <!-- 2. 前言一段（组件4，招聘概况） -->
