@@ -13,7 +13,6 @@
 | 石墨极简风 | `#52525B` 石墨灰 | 设计、科技评论、专业观点、高端品牌（极简克制、留白理性、全灰阶） | `references/themes/theme-graphite-minimal.md` | `border-bottom:2px solid #52525B;font-weight:600;` |
 | 留白禅意风 | `#4A5D52` 墨绿 | 禅意冥想、极简生活、深度随笔、艺术留白（呼吸感最强） | `references/themes/theme-zen-whitespace.md` | `border-bottom:1.5px solid #B5C8BC;font-weight:500;` |
 | 摸鱼票据风 | `#059669` emerald | 测评、工具对比、创意评测（票据/门票视觉隐喻，星级评分+编号+硬阴影卡片） | `references/themes/theme-moyu-ticket.md` | `border-bottom:2px solid #A7F3D0;font-weight:600;` |
-| 橄榄手记 | `#1e1f23` 墨黑（配橙 `#ed7b2f`） | 内刊手记、深度评测、案例复盘、系统性说明文档（编辑部内刊质感，分节形式多样，信息密度偏高） | `references/themes/theme-olive-journal.md` | `border-bottom:2px solid #ed7b2f;font-weight:600;` |
 | 天蓝学堂·清新教招 | `#1E9EF0` 天蓝 | 教师/事业单位/医护编/人才引进公开招聘报名（招聘标头+岗位一览卡+报名分步+下载引导） | `references/themes/theme-sky-xuetang.md` | `border-bottom:2px solid #BFE0F8;font-weight:600;` |
 | 墨蓝批注·荧光笔记 | `#2F5A8F` 墨蓝（荧光黄 `#F5C518` 点睛） | 备考经验帖、学习方法拆解、干货笔记（笔记批注感：荧光笔划重点+批注卡+坑点细左条，白底为主几乎无色块） | `references/themes/theme-ink-note.md` | `border-bottom:2px solid #F5C518;font-weight:600;` |
 | 琥珀速读·干货卡 | `#B45309` 琥珀棕（暖米 `#FDF6EC` 衬） | 考试干货清单、避坑指南、方法速览（结论前置+要点拆条+速记卡，扫读吸收最快） | `references/themes/theme-amber-skim.md` | `border-bottom:2px solid #F3D5A3;font-weight:600;` |

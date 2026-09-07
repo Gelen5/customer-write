@@ -13,7 +13,6 @@
 <tr>
 <td align="center"><img src="https://github.com/isjiamu/gzh-design-skill/releases/download/assets-v1/lf-zen-whitespace.png?v=1" width="250"><br><sub><b>留白禅意风 Zen Whitespace</b></sub></td>
 <td align="center"><img src="https://github.com/isjiamu/gzh-design-skill/releases/download/assets-v1/lf-moyu-ticket.png?v=1" width="250"><br><sub><b>摸鱼票据风 Moyu Ticket</b></sub></td>
-<td align="center"><img src="https://github.com/isjiamu/gzh-design-skill/releases/download/assets-v1/lf-olive-journal.png?v=1" width="250"><br><sub><b>橄榄手记 Olive Journal</b></sub></td>
 </tr>
 </table>
 
