@@ -124,7 +124,6 @@
   - `theme-mono-magazine`
   - `theme-mist-tech`
   - `theme-soft-editorial`
-  - `theme-cloud-kaowu`
 
 4. 如果用户已提供名称或 ID，优先使用用户提供值；只有缺失时才自动补全。
 
