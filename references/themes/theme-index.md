@@ -4,23 +4,24 @@
 
 每个主题的**英文标识**（用于产物命名 `{中文名}({标识}).html`、Agent 引用）= "组件库文件"列去掉 `theme-` 前缀与 `.md` 后缀。展示给用户仍用中文名。
 
-## 已注册主题
+## 已注册主题（6 套可用）
+
+> ⚠️ 2026-09-05 用户清理：仅保留 通用经典 3 套（红白/石墨/票据）+ 珊瑚招贴/考务蓝/天蓝学堂 3 套；摸鱼绿、留白禅意、橄榄手记及政务蓝/报纸/清单/曜夜/学院/榜上红/绛红/墨蓝批注/琥珀/黛青等均已删除，不再登记、不再选用。
 
 | 主题 | 主色 | 适用场景 | 组件库文件 | 正文下划线 CSS |
 |------|------|---------|-----------|---------------|
-| 摸鱼绿 | `#059669` emerald | 教程、测评、清单、工具盘点（卡片丰富、信息密度高，默认推荐） | `references/themes/theme-moyu-green.md` | `border-bottom:2px solid #A7F3D0;font-weight:600;` |
-| 红白色系 | `#DC2626` 正红 | 深度分析、观点、力量感话题（经典编辑风，编号章节+引言卡+签名区，红色克制点睛） | `references/themes/theme-red-white.md` | `border-bottom:2px solid #FECACA;font-weight:600;` |
-| 石墨极简风 | `#52525B` 石墨灰 | 设计、科技评论、专业观点、高端品牌（极简克制、留白理性、全灰阶） | `references/themes/theme-graphite-minimal.md` | `border-bottom:2px solid #52525B;font-weight:600;` |
-| 留白禅意风 | `#4A5D52` 墨绿 | 禅意冥想、极简生活、深度随笔、艺术留白（呼吸感最强） | `references/themes/theme-zen-whitespace.md` | `border-bottom:1.5px solid #B5C8BC;font-weight:500;` |
-| 摸鱼票据风 | `#059669` emerald | 测评、工具对比、创意评测（票据/门票视觉隐喻，星级评分+编号+硬阴影卡片） | `references/themes/theme-moyu-ticket.md` | `border-bottom:2px solid #A7F3D0;font-weight:600;` |
-| 天蓝学堂·清新教招 | `#1E9EF0` 天蓝 | 教师/事业单位/医护编/人才引进公开招聘报名（招聘标头+岗位一览卡+报名分步+下载引导） | `references/themes/theme-sky-xuetang.md` | `border-bottom:2px solid #BFE0F8;font-weight:600;` |
-| 珊瑚招贴·火热招生 | `#E6392F` 珊瑚橙红（明黄 `#FFB300`） | 开班招生、报名启动、线下宣讲、名额热度（促销角标+班型卡+报名CTA大按钮） | `references/themes/theme-banner-coral.md` | `border-bottom:2px solid #F5A79B;font-weight:700;` |
-| 考务蓝·严谨考务 | `#2456D8` 钴蓝（天蓝 `#3E8EF7`） | 笔试/面试通知、考试大纲科目、考务流程、分数线（考务标头+日程时间轴+科目卡） | `references/themes/theme-azure-kaowu.md` | `border-bottom:2px solid #B8CCF7;font-weight:600;` |
+| 红白色系 ⭐默认兜底 | `#DC2626` 正红 | 深度分析、观点、力量感话题（经典编辑风，编号章节+签名区，红色克制点睛） | `references/theme-red-white.md` | `border-bottom:2px solid #FECACA;font-weight:600;` |
+| 石墨极简风 | `#52525B` 石墨灰 | 设计、科技评论、专业观点、高端品牌（极简克制、留白理性、全灰阶） | `references/theme-graphite-minimal.md` | `border-bottom:2px solid #52525B;font-weight:600;` |
+| 摸鱼票据风 | `#059669` emerald | 测评、工具对比、创意评测（票据/门票视觉隐喻，星级评分+编号+硬阴影卡片） | `references/theme-moyu-ticket.md` | `border-bottom:2px solid #A7F3D0;font-weight:600;` |
+| 珊瑚招贴·火热招生 | `#E6392F` 珊瑚橙红（明黄 `#FFB300`） | 开班招生、报名启动、线下宣讲、名额热度（促销角标+班型卡+报名CTA大按钮） | `references/theme-banner-coral.md` | `border-bottom:2px solid #F5A79B;font-weight:700;` |
+| 考务蓝·严谨考务 | `#2456D8` 钴蓝（天蓝 `#3E8EF7`） | 笔试/面试通知、考试大纲科目、考务流程、分数线（考务标头+日程时间轴+科目卡） | `references/theme-azure-kaowu.md` | `border-bottom:2px solid #B8CCF7;font-weight:600;` |
+| 天蓝学堂·清新教招 | `#1E9EF0` 天蓝 | 教师/事业单位/医护编/人才引进公开招聘报名（岗位一览卡+报名分步；⛔招聘标头/下载引导/END收尾均已删除） | `references/theme-sky-xuetang.md` | `border-bottom:2px solid #BFE0F8;font-weight:600;` |
+
+> 珊瑚招贴/考务蓝/天蓝学堂 为「中公/华图/金标尺等招考机构公告」常用——珊瑚橙红偏开班招生引流、考务蓝偏笔试面试考务、天蓝学堂偏公开招聘报名，供招考信息发布号选用。
 
 ## 选择建议
 
-- **用户选择制**：用户没指定主题时，把本表全部主题列给用户选（中文名 + 适用场景），不替用户定；最贴合题材的主题可标"（推荐）"放第一位。
-- 全自动模式（用户明说"直接排"）才自动选：默认第一行主题，题材明显契合其它主题时选契合项并在交付时说明理由。
+- **自动选制（用户确认过）**：排版主题由 wechat-publisher-ultimate 自动按题材从可用 6 套里选，**不向用户提问**；无明显契合时兜底 = **红白色系 red-white**。仅当用户在请求中显式点名某套才采用点名套。
 - 同一篇文章只用一套主题，不混搭。
 
 ## 下划线色值的权威性

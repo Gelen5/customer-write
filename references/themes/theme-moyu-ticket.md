@@ -6,7 +6,7 @@
 >
 > **公众号平台限制须知**：
 > - ❌ 不支持 `<style>`/`<script>`、CSS class/id、`position:fixed/absolute`、`float`、`@media`/`@keyframes`、`display:grid`
-> - ✅ 支持内联 `style`、`display:flex`（有限）、`box-shadow`（含硬阴影偏移）、`border-radius`、`text-shadow`、`<svg>`（结尾互动区图标，微信支持）、`<section>/<p>/<span>/<strong>/<img>` 等基础标签
+> - ✅ 支持内联 `style`、`display:flex`（有限）、`box-shadow`（含硬阴影偏移）、`border-radius`、`text-shadow`、`<svg>`（微信支持）、`<section>/<p>/<span>/<strong>/<img>` 等基础标签
 >
 > **WeChat 兼容铁律**（本主题组件全部已按此写好，改动时必须遵守）：
 > - 所有"装饰性空元素"（撕票虚线、头像占位框）**没有真实内容时整块删掉**，不留空 section
@@ -334,54 +334,15 @@
 
 ---
 
-## 组件 13 结尾互动区 footer-cta（本主题的签名/CTA 区）
+## 组件 13 结尾互动区 footer-cta —— 已永久移除
 
-**用途**：文章结尾，票据风的"点赞·在看·星标"三连区，撕票虚线收尾。SVG 图标微信支持，原样保留。
-
-**签名文案适配**：SKILL.md 的作者签名（"我是 {{作者名}}…"两段，默认占位、由用户替换）以正文段落（组件 5）形式放在本组件**之前**；本组件内部 `{{互动文案}}` 直接使用 SKILL.md 固定的第二段（"如果你觉得今天这篇有收获…三连，我们下篇见"），不要重复堆叠两句"三连"。
-
-**可替换字段**：`{{互动文案}}`
-
-```html
-<section style="padding:0 0 32px;">
-  <section style="background-color:#fffef8;border:2px solid #1a1a1a;box-shadow:4px 4px 0 #1a1a1a;padding:24px 20px;text-align:center;">
-    <p style="font-size:13px;font-weight:700;color:#1a1a1a;margin:0 0 20px;line-height:1.6;">
-      <span leaf="">{{互动文案}}</span>
-    </p>
-    <section style="display:flex;justify-content:center;gap:24px;margin-bottom:16px;">
-      <section style="text-align:center;color:#555;">
-        <section style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;background-color:#fff;border:1px solid #1a1a1a;">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
-        </section>
-        <span style="font-size:10px;font-weight:600;"><span leaf="">点赞</span></span>
-      </section>
-      <section style="text-align:center;color:#555;">
-        <section style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;background-color:#fff;border:1px solid #1a1a1a;">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"></circle><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path></svg>
-        </section>
-        <span style="font-size:10px;font-weight:600;"><span leaf="">在看</span></span>
-      </section>
-      <section style="text-align:center;color:#059669;">
-        <section style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;background-color:#F0FDF4;border:2px solid #059669;">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-        </section>
-        <span style="font-size:10px;font-weight:600;"><span leaf="">星标</span></span>
-      </section>
-    </section>
-    <section style="border-top:1px dashed #ccc;padding-top:12px;">
-      <p style="font-size:10px;color:#999;letter-spacing:2px;margin:0;">
-        <span leaf="">THANKS FOR READING ✂</span>
-      </p>
-    </section>
-  </section>
-</section>
-```
+> ⛔ **本组件已于 2026-09-12 按用户要求代码级删除，任何文章不得再输出此模块**（点赞/在看/星标三连卡、撕票虚线收尾卡整体不要）。收尾一律直接使用组件 14 end-mark。不要再从历史记录或记忆中恢复此组件。
 
 ---
 
 ## 组件 14 结束符 end-mark
 
-**用途**：文章最末尾收尾，放在外层容器（组件 1）内最后，footer-cta 之后。
+**用途**：文章最末尾收尾，放在外层容器（组件 1）内最后（原组件 13 footer-cta 已移除，end-mark 前直接接正文收尾段落）。
 
 ```html
 <p style="text-align:center;color:#D1D5DB;font-size:14px;margin:24px 0 0 0;">
@@ -425,18 +386,16 @@
 
   <!-- 5. 标签组（组件12，可选，全文话题标签汇总） -->
 
-  <!-- 6. 固定签名段落（组件5 正文段落，SKILL.md 固定文案，footer-cta 之前） -->
+  <!-- 6. 收尾段落（组件5 正文段落，可选） -->
 
-  <!-- 7. 结尾互动区（组件13 footer-cta） -->
-
-  <!-- 8. 结束符（组件14 end-mark） -->
+  <!-- 7. 结束符（组件14 end-mark） -->
 
 </section>
 
-<!-- 9. 隐藏标记（组件15 hidden-mark，外层容器之外，全文最后一个元素） -->
+<!-- 8. 隐藏标记（组件15 hidden-mark，外层容器之外，全文最后一个元素） -->
 ```
 
-**骨架铁律**：本主题**不设目录/导航组件**——票据风强调"一张凭证从头看到尾"的阅读仪式，不做分段跳读；组件 15 隐藏标记必须在组件 1 全局容器闭合**之后**，是整篇产物真正的最后一个元素。
+**骨架铁律**：本主题**不设目录/导航组件**——票据风强调"一张凭证从头看到尾"的阅读仪式，不做分段跳读；**不设结尾互动区**（组件 13 footer-cta 已永久移除，禁止输出点赞/在看/星标卡）；组件 15 隐藏标记必须在组件 1 全局容器闭合**之后**，是整篇产物真正的最后一个元素。
 
 ---
 
@@ -449,7 +408,7 @@
 | **容器层** | 结论卡片 9、编号特点列表 10、标签组 12 | 小结、清单、话题标签 | 按需 |
 
 **克制原则**：
-- 硬阴影卡片（`box-shadow` 无虚化偏移）是本主题最强锚点，全文不超过 3 处（封面 + 核心观点卡片 + 结尾互动区，均为骨架固定位），不要在正文中段随意再加一个硬阴影卡片
+- 硬阴影卡片（`box-shadow` 无虚化偏移）是本主题最强锚点，全文不超过 2 处（封面 + 核心观点卡片，均为骨架固定位），不要在正文中段随意再加一个硬阴影卡片
 - 绿色高亮每段不超过 1-2 处；一段内不超过 2 种强调叠加
 - 品牌紫色 6e 只用于 AI 品牌专名，不用于普通强调
 
@@ -469,7 +428,7 @@
 | 生活/情感随笔 | 正文段落 5 + 核心观点卡片 11（无大数字版）+ 结论卡片 9（少量） | 小节标题 4 |
 | 案例实战 | Case 标题 7 + 图片容器 8 + 结论卡片 9 + 编号特点列表 10 | 核心观点卡片 11 |
 
-所有类型共用固定结构：票据封面 2 + 章节标题 3 + 固定签名段落 + 结尾互动区 13 + 结束符 14 + 隐藏标记 15。
+所有类型共用固定结构：票据封面 2 + 章节标题 3 + 收尾段落 + 结束符 14 + 隐藏标记 15。（结尾互动区 13 已永久移除，不得输出。）
 
 ---
 
@@ -495,4 +454,4 @@
 | `#话题` 标签 | 组件 12 tag-group | |
 | 行内 `` `code` `` / 技术名词/模型名 | 组件 6d 代码标签 | |
 | ` ``` 多行代码块 ``` ` | 通用库 1a 深色（默认）/ 1b 浅色 | 左竖条换本主题主色 `#059669` |
-| 文末 | 组件 13 footer-cta（+ 14 end-mark） | 固定签名段落放 footer-cta 前 |
+| 文末 | 组件 14 end-mark | 组件 13 footer-cta 已永久移除，禁止输出 |

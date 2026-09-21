@@ -50,7 +50,7 @@
    - 完整文章模板骨架（按该主题的结构模型排定装配顺序，明确目录/导航相对封面的位置）
    - 文章类型 → 组件组合配方表
    - Markdown → 组件映射规则表
-3. **平台红线复查**：剔除任何 `class`/`id` 依赖（预览 HTML 里的 `id="block-*"` 仅用于预览定位，进主题库的组件 HTML 一律去掉 id）、禁用标签、`>24px` 字号；`table` 只保留真实表格语义的。
+3. **平台红线复查**：剔除任何 `class`/`id` 依赖（预览 HTML 里的 `id="block-*"` 仅用于预览定位，进主题库的组件 HTML 一律去掉 id）、禁用标签、`>24px` 字号；`table` 只保留真实表格语义的。背景一律 `background-color` 内联实色——**禁止 `background:` 简写与任何渐变（会被公众号过滤，底色丢失）**；白底顶层块显式写 `background-color:#FFFFFF`。
 4. **登记 theme-index.md**：主题名 / 主色（THEME-COLOR）/ 适用场景（THEME-SCENE-TAGS）/ 组件库文件 / 正文下划线 CSS（从强调色或装饰色推导一条 `border-bottom` 样式）。
 5. **跑检查**：`python3 scripts/component_lint.py .` 须 0 ERROR；有 ERROR 修完再交付。
 6. **交付汇报**：主题名 + ID + 预览文件路径 + 已可在排版流程中选用；提醒用户可随时说「用 XX 主题排版」。
@@ -124,6 +124,7 @@
   - `theme-mono-magazine`
   - `theme-mist-tech`
   - `theme-soft-editorial`
+  - `theme-cloud-kaowu`
 
 4. 如果用户已提供名称或 ID，优先使用用户提供值；只有缺失时才自动补全。
 

@@ -2,7 +2,7 @@
 
 > **使用说明**：本组件库为「考务蓝·严谨考务（Azure Kaowu）」主题，面向公考培训机构发布的**考试考务类公告**——考试安排、笔试/面试通知、科目与大纲、分数线、准考证、考务流程（结构化、官方、清楚）。所有组件使用**内联样式**。
 >
-> **设计风格**：深钴蓝 `#2456D8` 主色 + 天蓝点缀，正式而清晰的"考务通知"感。顶部考务标头（考试名称 + 考务类型）、考试日程用「时间轴 / 流程线」、科目 / 大纲用清爽列表、分数线用数据卡、关键时间用蓝提示条。比「政务蓝（机关公文条款）」更聚焦"考试本身"——它不排招聘单位条款，专排"何时报名 / 考什么 / 怎么考 / 分数线多少"。
+> **设计风格**：深钴蓝 `#2456D8` 主色 + 天蓝点缀，正式而清晰的"考务通知"感。考试日程用「时间轴 / 流程线」、科目 / 大纲用清爽列表、分数线用数据卡、关键时间用蓝提示条。比「政务蓝（机关公文条款）」更聚焦"考试本身"——它不排招聘单位条款，专排"何时报名 / 考什么 / 怎么考 / 分数线多少"。
 >
 > **公众号平台限制须知**：
 > - ❌ 不支持 `<style>`/`<script>`、CSS class/id/`<div>`、`position:fixed/absolute/sticky`、`float`、`@media`/`@keyframes`、`display:grid`、CSS 变量 `var(--x)`
@@ -19,7 +19,7 @@
 ## 设计变量速查表
 
 ```
-主色（钴蓝）：      #2456D8（标头 / 流程 / 编号 / 下划线锚点）
+主色（钴蓝）：      #2456D8（章节编号 / 流程 / 下划线锚点）
 主色浅底：          #E8EFFC（浅蓝底标签 / 提示）
 主色更浅：          #F4F8FE（信息卡底）
 辅蓝（天蓝）：      #3E8EF7（点缀，流程 / 图标，≤3 处）
@@ -51,27 +51,9 @@
 
 ---
 
-## 组件 2 考务标头（本主题定调封面）
+## 组件 2 考务标头 —— 【已永久删除，2026-09-12 用户要求】
 
-> 钴蓝细线顶 + 考务类型小标签（考务 / 笔试 / 面试 / 调剂）+ 主标题，下方关键时间行（报名 / 考试）。像考试院的一张考务单。
-
-```html
-<section style="margin:6px 0 26px;">
-  <section style="display:flex;align-items:center;border-bottom:2px solid #2456D8;padding-bottom:14px;">
-    <span style="display:inline-block;background-color:#2456D8;color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:3px;letter-spacing:1px;margin-right:10px;"><span leaf="">{{考务类型}}</span></span>
-    <span style="font-size:11px;color:#7B8799;letter-spacing:1px;"><span leaf="">{{发布机构 · 2026}}</span></span>
-  </section>
-  <p style="font-size:24px;font-weight:900;color:#16233C;margin:18px 0 10px;line-height:1.5;letter-spacing:0.5px;">
-    <span leaf="">{{公告主标题}}</span>
-  </p>
-  <section style="background-color:#F4F8FE;border:1px solid #E8EFFC;border-radius:6px;padding:12px 14px;">
-    <p style="font-size:13px;color:#2E3A50;margin:0;line-height:1.8;">
-      <span leaf="">报名：</span><strong style="color:#2456D8;"><span leaf="">{{报名起止}}</span></strong>
-      <span leaf="">　考试：</span><strong style="color:#2456D8;"><span leaf="">{{考试日期}}</span></strong>
-    </p>
-  </section>
-</section>
-```
+> ⛔ 该组件（考务类型标签 + 机构行 + 报名/考试时间提示条）已代码级移除，**永久不再输出**。文章正文直接从"前言事实段"开始，排版开头即第一章章节标题。不得以任何变体形式恢复此模块。
 
 ---
 
@@ -252,32 +234,11 @@
 
 ---
 
-## 组件 12 扫码查成绩 / 看大纲引导
-
-```html
-<section style="border:1px solid #E8EFFC;background-color:#F4F8FE;border-radius:8px;padding:16px;margin-bottom:22px;text-align:center;">
-  <p style="font-size:15px;font-weight:800;color:#2456D8;margin:0 0 6px;">
-    <span leaf="">成绩公布 / 大纲下载提示</span>
-  </p>
-  <p style="font-size:13px;color:#5B6B82;margin:0;">
-    <span leaf="">公众号后台回复 <span style="background-color:#2456D8;color:#fff;padding:2px 8px;border-radius:3px;font-weight:800;"><span leaf="">【{{数字}}】</span></span> 获取考务安排</span>
-  </p>
-</section>
-```
-
 ---
 
-## 组件 13 END 收尾
+## 组件 12 END 收尾 —— 【已永久删除，2026-09-12 用户要求】
 
-```html
-<section style="margin-top:8px;">
-  <section style="display:flex;align-items:center;justify-content:center;margin-bottom:24px;">
-    <span style="height:1px;width:46px;background-color:#B8CCF7;margin-right:12px;"><span leaf=""><br></span></span>
-    <span style="font-size:11px;color:#2456D8;letter-spacing:3px;font-weight:800;"><span leaf="">END · 预祝上岸</span></span>
-    <span style="height:1px;width:46px;background-color:#B8CCF7;margin-left:12px;"><span leaf=""><br></span></span>
-  </section>
-</section>
-```
+> ⛔ 该组件（"END · 预祝上岸"双细线收尾条）已代码级移除，**永久不再输出**。文章以最后一个内容章节自然收尾，文末不添加任何收尾装饰条。
 
 ---
 
@@ -286,19 +247,18 @@
 ```html
 <section style="max-width:677px;margin:0 auto;background-color:#FFFFFF;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#2E3A50;line-height:1.85;letter-spacing:0.3px;overflow-x:hidden;">
 
-  <!-- 1. 考务标头（组件2，含报名/考试时间，最前） -->
+  <!-- 1. 前言正文（组件4，事实陈述，直接开始） -->
   <!-- 2. 第一章节（组件3）→ 章内：正文4 + 时间提醒6 -->
   <!-- 3. 考试日程/流程时间轴（组件7） -->
   <!-- 4. 报考条件清单（组件8） -->
   <!-- 5. 科目/试卷结构（组件9）、分数线（组件10） -->
   <!-- 6. 考试纪律（组件11） -->
-  <!-- 7. 扫码看安排引导（组件12） -->
-  <!-- 8. END（组件13） -->
+  <!-- 7. 文末自然收尾（END组件已删除，不加任何收尾条） -->
 
 </section>
 ```
 
-**骨架铁律**：考务标头最前（直给报名与考试时间）；考试时间链用时间轴；正文每段 1~3 处蓝下划线；END 唯一。此主题聚焦"考试安排"，不排单位招聘条款（那是政务蓝公文的场景）。
+**骨架铁律**：正文直接从前言事实段开始（考务标头已删除，不输出任何顶部标头/题图/时间条块）；考试时间链用时间轴；正文每段 1~3 处蓝下划线；文末自然收尾（END 收尾条已删除，不输出）。此主题聚焦"考试安排"，不排单位招聘条款（那是政务蓝公文的场景）。
 
 ---
 
@@ -306,7 +266,7 @@
 
 | 层级 | 样式 | 用途 | 频率 |
 |------|------|------|------|
-| **锚点层** | 钴蓝标头 / 流程 / 编号 + 天蓝 #3E8EF7（≤3） | 标头、流程、打印准考证 | 全文锚点 ≤5 |
+| **锚点层** | 钴蓝章节编号 / 流程 / 编号 + 天蓝 #3E8EF7（≤3） | 章节编号、流程、打印准考证 | 全文锚点 ≤5 |
 | **标记层** | 蓝下划线（默认）/ 浅蓝底标签 / 钴蓝加粗 | 科目、时间、分数线 | 每段 1~3 处 |
 | **容器层** | 章节标题、时间轴、科目卡、数据卡、纪律条 | 考务信息 | 按需 |
 
@@ -321,13 +281,13 @@
 
 | 文章类型 | 核心组件组合 | 点缀组件 |
 |---|---|---|
-| 笔试/面试通知 | 考务标头2 + 正文4 + 时间轴7 + 纪律11 | 科目9、END13 |
-| 考试大纲 / 科目说明 | 考务标头2 + 科目卡9 + 正文4 | 清单8、引导12 |
-| 报名 / 缴费公告 | 考务标头2 + 时间提醒6 + 流程7 + 清单8 | 引导12 |
-| 分数线 / 进面 / 调剂 | 考务标头2 + 分数线卡10 + 正文4 | 时间轴7、引导12 |
-| 考务汇总（多科速递） | 考务标头2 + 多条时间轴7 + 时间提醒6 | 引导12 |
+| 笔试/面试通知 | 正文4 + 时间轴7 + 纪律11 | 科目9 |
+| 考试大纲 / 科目说明 | 科目卡9 + 正文4 | 清单8 |
+| 报名 / 缴费公告 | 时间提醒6 + 流程7 + 清单8 | |
+| 分数线 / 进面 / 调剂 | 分数线卡10 + 正文4 | 时间轴7 |
+| 考务汇总（多科速递） | 多条时间轴7 + 时间提醒6 | |
 
-所有类型共用：考务标头 2 + 章节标题 3 + END 13。
+所有类型共用：前言正文4 开头 + 章节标题 3（考务标头、END 收尾条均已删除，不再输出）。
 
 ---
 
@@ -335,7 +295,7 @@
 
 | Markdown 元素 | 对应组件 | 说明 |
 |---|---|---|
-| 文首标题 | 组件 2 考务标头 | 考务类型 + 主标题 + 报名/考试时间 |
+| 文首标题 | 不渲染（组件 2 考务标头已删除） | 外标题单独交付，不进 HTML；正文直接从前言事实段开始 |
 | `## 章节（一、二…）` | 组件 3 章节标题 | 钴蓝"一/二/三"编号块 |
 | `### 子标题` | 钴蓝左竖条小标题 | 章内 |
 | 普通段落 | 组件 4 正文 | 每段标 1~3 处蓝下划线 |
@@ -349,6 +309,5 @@
 | 分数线 / 合格线 | 组件 10 蓝底数据卡 | |
 | 考试要求 / 纪律 | 组件 11 天蓝左竖纪律条 | |
 | 打印准考证锚点 | 组件 5e 天蓝加粗 | ≤3 |
-| 扫码查成绩 / 看大纲 | 组件 12 引导条 | |
 | `---` | 章节间距由组件3 margin 承担 | |
-| 文末 | 组件 13 END | |
+| 文末 | 不渲染（组件 12 END 已删除） | 以最后一个内容章节自然收尾，不加收尾装饰条 |

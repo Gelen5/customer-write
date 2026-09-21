@@ -16,6 +16,16 @@
 
 ---
 
+## ⚠️ 固定标准版本声明（红线纪律）
+
+> **本文件自确立之日起为「红白色系（red-white）」固定标准版本，锁版不可改。**
+>
+> - 本版排版样式、全部参数配置、各项布局细节均已定稿，**后续任何针对 red-white 主题的生成/修改都必须严格沿用本文件**，**不得自行调整格式、增删参数或改变布局**。
+> - 本纪律**仅对红白色系（red-white）生效**，不得影响 gzh-design 的其他主题（red-black、orange-black、graphite-minimal、banner-coral、azure-kaowu、sky-xuetang 等）。
+> - 本次锁版纳入的关键定值（当前版实测）：正文色 `#000000`；全局行高 `1.75`；组件 3 本文看点 `padding-bottom:12px`；组件 5 第一章（紧跟导读/前言）`margin-top:24px`、后续章节 `margin-top:48px`。
+> - 组件 16 尾部签名、组件 15 END 结尾线已**永久移除**，禁止恢复。
+> - 如确需变更，须经用户显式授权后重新锁版。
+
 ## 设计变量速查表
 
 ```
@@ -26,12 +36,12 @@
 主色调背景：   #FEF2F2（极淡红底）
 淡粉标记色：   #FECACA（下划线/左竖条专用）
 标题色：       #1C1917（近黑）
-正文色：       #374151（深灰）
+正文色：       #000000（纯黑，用户硬约束，禁用灰/蓝灰等异色）
 辅助文字色：   #9CA3AF（中灰）
 分割线色：     #E5E7EB
 灰竖条：       #D6D3D1（灰底引用左竖条）
 正文字号：     15px（不可改）
-行高：         1.8
+行高：         1.75
 字间距：       0.5px
 最大宽度：     677px
 内容区边距：   0 10px（左右各 10px）
@@ -44,7 +54,7 @@
 ## 组件 1 全局容器
 
 ```html
-<section style="max-width:677px;margin:0 auto;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#374151;line-height:1.75;letter-spacing:0.5px;overflow-x:hidden;">
+<section style="max-width:677px;margin:0 auto;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#000000;line-height:1.75;letter-spacing:0.5px;overflow-x:hidden;">
 
   <!-- 所有组件放在这里 -->
 
@@ -85,7 +95,7 @@
 > 3 个及以上章节时生成。红底白字编号 + 深色标题；展示**精选 3 个核心看点**，不是全量章节列表。
 
 ```html
-<section style="padding:0 10px 32px;">
+<section style="padding:0 10px 12px;">
   <p style="font-size:14px;color:#9CA3AF;margin:0 0 14px;letter-spacing:1px;">
     <span leaf="">📌 本文看点</span>
   </p>
@@ -122,9 +132,10 @@
 
 ## 组件 5 章节标题（红底编号标签 + 标题）
 
-> 红色实底编号标签 + 英文小标签 + 中文大标题，底部红色实线。第一章 `margin-top:16px`，后续章节 `margin-top:48px`。
+> 红色实底编号标签 + 英文小标签 + 中文大标题，底部红色实线。紧跟导读/前言的第一章 `margin-top:24px`，后续章节 `margin-top:48px`。
 
 ```html
+<!-- 第一章（紧跟导读/前言）用 margin-top:24px；后续章节用 margin-top:48px -->
 <section style="margin-top:48px;margin-bottom:28px;padding:0 10px;">
   <section style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;padding-bottom:14px;border-bottom:3px solid #DC2626;">
     <section style="display:flex;align-items:center;">
@@ -145,7 +156,7 @@
 </section>
 ```
 
-**结语章节变体**（编号用 `∞` 替代数字，英文标签用 `THE END` / `EPILOGUE`）：
+**结语章节变体**（编号用 `∞` 替代数字，英文标签用 `EPILOGUE`）：
 
 ```html
 <span style="display:inline-block;background-color:#DC2626;color:#FFFFFF;font-size:18px;font-weight:900;padding:4px 14px;border-radius:6px;margin-right:14px;line-height:1.3;"><span leaf="">∞</span></span>
@@ -259,7 +270,7 @@
 
 ```html
 <section style="background-color:#FEF2F2;border-radius:10px;padding:18px 20px;margin-bottom:24px;border:1px solid #FECACA;">
-  <p style="font-size:15px;color:#374151;margin:0;line-height:1.8;text-align:justify;">
+  <p style="font-size:15px;color:#000000;margin:0;line-height:1.8;text-align:justify;">
     {{引用内容，可含 7d 下划线等内联样式}}
   </p>
 </section>
@@ -269,7 +280,7 @@
 
 ```html
 <section style="border-left:4px solid #D6D3D1;padding:14px 20px;margin-bottom:24px;background-color:#FAFAFA;border-radius:0 8px 8px 0;">
-  <p style="font-size:14px;color:#374151;margin:0;line-height:1.8;text-align:justify;">
+  <p style="font-size:14px;color:#000000;margin:0;line-height:1.8;text-align:justify;">
     <span leaf="">{{轻量旁注内容}}</span>
   </p>
 </section>
@@ -304,7 +315,7 @@
   <p style="margin-bottom:6px;font-size:12px;font-weight:700;color:#9CA3AF;letter-spacing:1px;">
     <span style="color:#DC2626;"><span leaf="">！踩坑提示 🕳</span></span>
   </p>
-  <p style="font-size:14px;color:#374151;margin:0;line-height:1.7;">
+  <p style="font-size:14px;color:#000000;margin:0;line-height:1.7;">
     <span leaf="">{{提示内容}}</span>
   </p>
 </section>
@@ -324,7 +335,7 @@
     <span style="display:inline-block;background-color:#DC2626;color:#fff;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;"><span leaf="">STEP 01</span></span>
     <span style="font-size:15px;font-weight:800;color:#1C1917;"><span leaf="">{{步骤标题}}</span></span>
   </section>
-  <p style="font-size:15px;margin:0 0 16px;color:#374151;line-height:1.8;text-align:justify;">
+  <p style="font-size:15px;margin:0 0 16px;color:#000000;line-height:1.8;text-align:justify;">
     {{步骤内容}}
   </p>
 </section>
@@ -336,7 +347,7 @@
 
 ```html
 <section style="background-color:#fff;border-radius:12px;padding:16px 20px;box-shadow:0 4px 16px rgba(220,38,38,0.10);margin-bottom:24px;">
-  <p style="font-size:14px;color:#374151;margin:0;line-height:1.8;">
+  <p style="font-size:14px;color:#000000;margin:0;line-height:1.8;">
     {{条目说明内容}}
   </p>
 </section>
@@ -352,15 +363,15 @@
 <section style="margin-bottom:24px;">
   <section style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;">
     <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;background-color:#DC2626;color:#fff;font-size:12px;font-weight:700;border-radius:50%;flex-shrink:0;margin-top:2px;"><span leaf="">1</span></span>
-    <p style="font-size:15px;color:#374151;margin:0;line-height:1.8;flex:1;"><span leaf="">{{列表项内容}}</span></p>
+    <p style="font-size:15px;color:#000000;margin:0;line-height:1.8;flex:1;"><span leaf="">{{列表项内容}}</span></p>
   </section>
   <section style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;">
     <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;background-color:#DC2626;color:#fff;font-size:12px;font-weight:700;border-radius:50%;flex-shrink:0;margin-top:2px;"><span leaf="">2</span></span>
-    <p style="font-size:15px;color:#374151;margin:0;line-height:1.8;flex:1;"><span leaf="">{{列表项内容}}</span></p>
+    <p style="font-size:15px;color:#000000;margin:0;line-height:1.8;flex:1;"><span leaf="">{{列表项内容}}</span></p>
   </section>
   <section style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;">
     <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;background-color:#DC2626;color:#fff;font-size:12px;font-weight:700;border-radius:50%;flex-shrink:0;margin-top:2px;"><span leaf="">3</span></span>
-    <p style="font-size:15px;color:#374151;margin:0;line-height:1.8;flex:1;"><span leaf="">{{列表项内容}}</span></p>
+    <p style="font-size:15px;color:#000000;margin:0;line-height:1.8;flex:1;"><span leaf="">{{列表项内容}}</span></p>
   </section>
 </section>
 ```
@@ -372,7 +383,7 @@
   <p style="margin:0 0 6px;">
     <span style="display:inline-block;font-size:14px;font-weight:700;color:#991B1B;background-color:#FEE2E2;padding:3px 10px;border-radius:999px;"><span style="display:inline-block;width:6px;height:6px;background-color:#DC2626;border-radius:50%;margin-right:5px;vertical-align:middle;"><span leaf=""><br></span></span><span leaf="">{{要点标题}}</span></span>
   </p>
-  <p style="font-size:14px;color:#4B5563;margin:0;line-height:1.7;text-align:justify;">
+  <p style="font-size:14px;color:#000000;margin:0;line-height:1.7;text-align:justify;">
     <span leaf="">{{要点说明}}</span>
   </p>
 </section>
@@ -388,7 +399,7 @@
   </section>
   <section style="flex:1;padding-bottom:12px;">
     <p style="margin:0 0 6px;font-size:15px;font-weight:800;color:#1C1917;"><span leaf="">{{节点标题}}</span></p>
-    <p style="font-size:15px;margin:0;color:#374151;line-height:1.8;text-align:justify;">{{节点内容}}</p>
+    <p style="font-size:15px;margin:0;color:#000000;line-height:1.8;text-align:justify;">{{节点内容}}</p>
   </section>
 </section>
 ```
@@ -446,12 +457,12 @@
     </thead>
     <tbody>
       <tr>
-        <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#374151;"><span leaf="">{{内容}}</span></td>
-        <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#374151;"><span leaf="">{{内容}}</span></td>
+        <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#000000;"><span leaf="">{{内容}}</span></td>
+        <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#000000;"><span leaf="">{{内容}}</span></td>
       </tr>
       <tr>
-        <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#374151;background-color:#FEF2F2;"><span leaf="">{{内容}}</span></td>
-        <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#374151;background-color:#FEF2F2;"><span leaf="">{{内容}}</span></td>
+        <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#000000;background-color:#FEF2F2;"><span leaf="">{{内容}}</span></td>
+        <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#000000;background-color:#FEF2F2;"><span leaf="">{{内容}}</span></td>
       </tr>
     </tbody>
   </table>
@@ -498,52 +509,15 @@
 
 ---
 
-## 组件 15 END 结尾分割线
-
-```html
-<section style="padding:0 10px;">
-  <section style="text-align:center;margin:0 0 32px;">
-    <section style="display:flex;align-items:center;justify-content:center;">
-      <span style="height:2px;width:60px;background-color:#DC2626;margin-right:12px;"><span leaf=""><br></span></span>
-      <span style="font-size:11px;color:#DC2626;letter-spacing:3px;font-weight:700;"><span leaf="">END</span></span>
-      <span style="height:2px;width:60px;background-color:#DC2626;margin-left:12px;"><span leaf=""><br></span></span>
-    </section>
-  </section>
-</section>
-```
-
----
-
-## 组件 16 尾部作者签名区
-
-> 固定签名文案以正文段落形式呈现；有个人名片/引导图素材才放图，无素材整块删。
-
-```html
-<section style="padding:0 10px;">
-  <section style="text-align:center;margin-bottom:10px;border-radius:12px;overflow:hidden;">
-    <span leaf=""><img src="{{个人名片或引导图URL，无则删本 section}}" style="max-width:100%;height:auto;display:block;margin:0 auto;"></span>
-  </section>
-  <p style="margin-bottom:20px;font-size:15px;line-height:1.8;text-align:justify;">
-    <span leaf="">我是 {{作者名}}，{{一句话简介，如：热衷于分享 AI 观察与干货}}。</span>
-  </p>
-  <p style="margin-bottom:20px;font-size:15px;line-height:1.8;text-align:justify;">
-    <span leaf="">如果你觉得今天这篇有收获，欢迎</span>
-    <strong style="color:#DC2626;"><span leaf="">点赞、在看、转发</span></strong>
-    <span leaf="">三连，我们下篇见。</span>
-  </p>
-</section>
-```
-
----
-
 ## 完整文章模板骨架
 
 ```html
-<section style="max-width:677px;margin:0 auto;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#374151;line-height:1.75;letter-spacing:0.5px;overflow-x:hidden;">
+<section style="max-width:677px;margin:0 auto;background-color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#000000;line-height:1.75;letter-spacing:0.5px;overflow-x:hidden;">
 
-  <!-- 1. 开头引言卡片（组件2，白底红色光晕） -->
+  <!-- 1.（用户偏好默认省略）顶部引言卡组件2 —— 仅当用户显式要求"加引言卡/顶部题图"才输出；否则直接从 2 前言正文开始 -->
 
   <!-- 2. 前言正文（组件6 段落 × N，放 0 10px 边距 section，第一章之前的开场白） -->
+  <!--    内容必须为事实陈述，不放任何"诗意钩子/开篇判断句/标题金句" -->
 
   <!-- 3. 前言导读（组件3，3+ 章节时生成，精选 3 看点） -->
 
@@ -554,14 +528,12 @@
 
   <!-- 6. 结语章（组件5 变体：编号 ∞，英文 THE END） -->
 
-  <!-- 7. END 分割线（组件15） -->
-
-  <!-- 8. 尾部签名（组件16） -->
-
 </section>
 ```
 
-**骨架铁律**：引言卡在最前；导读区在前言正文之后、第一章之前；章节之间用组件 4 红色渐变线分隔；一篇只有一个 END + 一个签名区。
+**骨架铁律（用户长期偏好）**：**默认不输出顶部引言卡组件2**，从"前言正文"开始；确需金句则嵌入前言第一段。导读区在前言正文之后、第一章之前；章节之间用组件 4 红色渐变线分隔。仅当用户显式要求"加引言卡"时才输出组件2。
+
+> **【锁版纪律】**以上为该主题固定标准，生成/修改一律照此执行，不得自行增删模块或调整间距参数（组件 16 尾部签名、组件 15 END 已永久移除，禁止恢复）。
 
 ---
 
@@ -577,7 +549,7 @@
 - 红底白字标签（`bg:#DC2626`）**仅在引言卡内**，正文关键词标签用浅红底深红字 7b
 - 红色加粗全文 ≤5 处
 - 引用/提示统一用左竖条 + 浅底 + 类型小标签，**不用四周虚线框**（dashed）
-- 渐变红仅出现在章节分割线 4 和 END 线 15
+- 渐变红仅出现在章节分割线 4
 
 ---
 
@@ -595,7 +567,7 @@
 | 生活/情感随笔 | 正文6 + 居中金句8d + 灰底旁注8c | 金句引用8a（少量） |
 | 案例实战 | case-label 10a / timeline 11c + step-label 10a | 浅红引用8b、踩坑提示9b |
 
-所有类型共用固定结构：引言卡 2 + 导读 3（3+ 章节）+ 编号章节 5 + END 15 + 签名 16。
+所有类型共用固定结构：引言卡 2 + 导读 3（3+ 章节）+ 编号章节 5。
 
 ---
 
@@ -605,7 +577,7 @@
 |---|---|---|
 | `# 标题` | 不使用 | 公众号文章标题在平台设置 |
 | 文章开头 `> 引言金句` | 组件 2 白底红色光晕引言卡 | 视角与外标题错开 |
-| `## 章节标题` | 组件 5 章节标题 | 红底编号 01/02…，末章 ∞ + THE END |
+| `## 章节标题` | 组件 5 章节标题 | 红底编号 01/02…，末章 ∞ + 结语 |
 | `### 子标题` | 组件 6b 红色左竖条小标题 | 不套编号章节样式 |
 | 普通段落 | 组件 6 正文段落 | 每段主动标 1~3 处淡粉下划线 7d |
 | `**加粗文字**` | 组件 7a 普通加粗（默认）/ 红色加粗（锚点 ≤5） | 普通加粗为主 |
@@ -629,4 +601,3 @@
 | 行内标签 | 组件 13 标签胶囊 | 浅红底默认 |
 | `---` | 组件 4 章节分割线 | 红色渐变 |
 | `![](图片)` | 组件 14 图片容器 | 圆角卡片 + 说明 |
-| 文末 | 组件 15 END + 16 签名 | |

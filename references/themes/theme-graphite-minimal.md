@@ -2,7 +2,7 @@
 
 > **使用说明**：本组件库为「石墨极简（Graphite Minimal）」主题（经典编辑风的极简变体），所有组件使用**内联样式**，可直接复制粘贴到微信公众号编辑器。
 >
-> **设计风格**：石墨灰 + 纯白 + 几何细线 + 超大留白。克制的现代极简排版，几乎无色块，以 1px 细线与大间距建立秩序感。正文关键词用石墨下划线（`border-bottom:2px solid #52525B;font-weight:600;`）标记，超大水印编号章节、上下细线引言卡、几何签名区的编辑骨架，气质极简克制、留白理性。适合设计、科技评论、专业观点、高端品牌类文章。
+> **设计风格**：石墨灰 + 纯白 + 几何细线 + 超大留白。克制的现代极简排版，几乎无色块，以 1px 细线与大间距建立秩序感。正文关键词用石墨下划线（`border-bottom:2px solid #52525B;font-weight:600;`）标记，超大水印编号章节、上下细线引言卡的编辑骨架，气质极简克制、留白理性。适合设计、科技评论、专业观点、高端品牌类文章。
 >
 > **公众号平台限制须知**：
 > - ❌ 不支持 `<style>`/`<script>`、CSS class/id/`<div>`、`position:fixed/absolute/sticky`、`float`、`@media`/`@keyframes`、`display:grid`、CSS 变量 `var(--x)`
@@ -10,7 +10,7 @@
 > - font-size ≤ 24px；正文强调用左竖条/石墨下划线/小标签，**不用四周虚线框**（dashed）
 >
 > **WeChat 兼容铁律**（本主题组件全部已按此写好，改动时必须遵守）：
-> - 所有"装饰性空元素"（细线分割线、END 短线、水印编号旁装饰、数据卡分隔、时间线竖线）**必须在内部放 `<span leaf=""><br></span>` 占位**，否则微信会剥掉样式
+> - 所有"装饰性空元素"（细线分割线、水印编号旁装饰、数据卡分隔、时间线竖线）**必须在内部放 `<span leaf=""><br></span>` 占位**，否则微信会剥掉样式
 > - **不要把 `font-size`/`border-bottom` 打在 `<strong>` 上**，也不要在同一个 `<p>` 里混多个不同 `font-size`——微信编辑器会自动"纠正"导致样式被重写。正确做法：拆成多个 `<p>`，每个 `<p>` 只有一个字号；高亮样式统一挂在外层 `<span>` 上
 > - 不用 `position:absolute` 做划线/高亮，删除线用 `text-decoration:line-through`
 > - 结构化区域（如引言卡右下署名、图片说明、水印编号旁标签）没有内容时**整块删掉**，不留空 section
@@ -563,45 +563,6 @@ GIF 动图角标改极简描边胶囊：边框与字色用石墨主色 `#52525B`
 
 ---
 
-## 组件 15 END 结尾分割线
-
-> 纯几何，1px 细线 + 居中 "END" 字样，石墨灰，简洁收尾。
-
-```html
-<section style="padding:0 10px;">
-  <section style="text-align:center;margin:0 0 36px;">
-    <section style="display:flex;align-items:center;justify-content:center;">
-      <span style="height:1px;width:48px;background-color:#E4E4E7;margin-right:16px;"><span leaf=""><br></span></span>
-      <span style="font-size:10px;color:#A1A1AA;letter-spacing:4px;font-weight:500;"><span leaf="">END</span></span>
-      <span style="height:1px;width:48px;background-color:#E4E4E7;margin-left:16px;"><span leaf=""><br></span></span>
-    </section>
-  </section>
-</section>
-```
-
----
-
-## 组件 16 尾部作者签名区
-
-> 固定签名文案以正文段落形式呈现；有个人名片 / 引导图素材才放图，无素材整块删。
-
-```html
-<section style="padding:0 10px 24px;">
-  <section style="border-top:1px solid #E4E4E7;padding-top:28px;">
-    <p style="margin-bottom:16px;font-size:15px;line-height:1.8;color:#52525B;text-align:justify;">
-      <span leaf="">我是 {{作者名}}，{{一句话简介，如：热衷于分享 AI 观察与干货}}。</span>
-    </p>
-    <p style="margin-bottom:0;font-size:15px;line-height:1.8;color:#52525B;text-align:justify;">
-      <span leaf="">如果你觉得今天这篇有收获，欢迎</span>
-      <strong style="color:#27272A;"><span leaf="">点赞、在看、转发</span></strong>
-      <span leaf="">三连，我们下篇见。</span>
-    </p>
-  </section>
-</section>
-```
-
----
-
 ## 完整文章模板骨架
 
 ```html
@@ -618,16 +579,12 @@ GIF 动图角标改极简描边胶囊：边框与字色用石墨主色 `#52525B`
 
   <!-- 5. 章节分割线（组件4）+ 第二章…第N章（组件5，margin-top:56px） -->
 
-  <!-- 6. 结语章（组件5 变体：编号 ∞，英文 THE END） -->
-
-  <!-- 7. END 分割线（组件15） -->
-
-  <!-- 8. 尾部签名（组件16） -->
+  <!-- 6. 结语章（组件5 变体：编号 ∞，英文 THE END）。注意：END 结尾分割线（原组件15）与尾部签名区（原组件16）均已按用户要求永久删除，文章以最后一章内容直接收尾，不再输出任何结尾装饰模块 -->
 
 </section>
 ```
 
-**骨架铁律**：引言卡在最前；导读区在前言正文之后、第一章之前；章节之间用组件 4 石墨细线分隔；一篇只有一个 END + 一个签名区。这是经典编辑向的极简骨架——开头引言/封面 → 前言 → 编号章节 → 结语 → 签名。
+**骨架铁律**：引言卡在最前；导读区在前言正文之后、第一章之前；章节之间用组件 4 石墨细线分隔；**END 结尾分割线（原组件15）与尾部签名区（原组件16）均已永久删除，任何文章不得再输出**。这是经典编辑向的极简骨架——开头引言/封面 → 前言 → 编号章节 → 最后一章内容直接收尾。
 
 ---
 
@@ -662,7 +619,7 @@ GIF 动图角标改极简描边胶囊：边框与字色用石墨主色 `#52525B`
 | 生活/情感随笔 | 正文6 + 居中金句8d + 辅助竖条旁注8c | 石墨竖条金句8a（少量） |
 | 案例实战 | case-label 10a / timeline 11c + step-label 10a | 极浅灰引用8b、踩坑提示9c |
 
-所有类型共用固定结构：引言卡 2 + 导读 3（3+ 章节）+ 水印编号章节 5 + END 15 + 签名 16。
+所有类型共用固定结构：引言卡 2 + 导读 3（3+ 章节）+ 水印编号章节 5。END 分割线与尾部签名区均已永久删除（2026-09-12 用户指令），不得输出。
 
 ---
 
@@ -697,6 +654,6 @@ GIF 动图角标改极简描边胶囊：边框与字色用石墨主色 `#52525B`
 | 行内标签 | 组件 13 标签胶囊 | 石墨描边默认 |
 | `---` | 组件 4 章节分割线 | 1px 石墨极细线 |
 | `![](图片)` | 组件 14 图片容器 | 极简线框，无圆角 |
-| 文末 | 组件 15 END + 16 签名 | END线 + 签名 |
+| 文末 | 无（直接收尾） | END 分割线与签名区（原组件15/16）已永久删除，最后一章内容直接收尾 |
 </content>
 </invoke>
